@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package application_covid.interfacee;
+package Inscription;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -20,24 +20,22 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author House
+ * @author Achref
  */
-public class HomePage extends Application {
+public class Choix_utilisateur extends Application {
     
     @Override
     public void start(Stage primaryStage) {
         try {
             Parent root = FXMLLoader.load(getClass()
-                    .getResource("Inscription.fxml"));
-            
+                    .getResource("Choix_utilisateur.fxml"));
             Scene scene = new Scene(root);
             
-            primaryStage.setTitle("Inscription");
+            primaryStage.setTitle("Choix d'utilisateur");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {
-            System.err.println(ex.getMessage());
-        }
+            System.out.println(ex.getMessage());        }
     }
 
     /**
