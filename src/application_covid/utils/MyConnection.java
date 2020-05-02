@@ -16,7 +16,9 @@ import java.util.logging.Logger;
  * @author House
  */
 public class MyConnection {
-    public String url="jdbc:mysql://localhost:3306/esprit1";
+    public String url="jdbc:mysql://localhost:3308/covid-database?useUnicode=true" +
+            "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&" +
+            "serverTimezone=UTC";
     public String login="root";
     public String pwd="";
     Connection cnx;
