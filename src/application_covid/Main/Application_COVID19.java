@@ -5,9 +5,6 @@
  */
 package application_covid.Main;
 
-import application_covid.entities.Quiz;
-import application_covid.entities.QuizType;
-import application_covid.services.QuizCRUD;
 
 import java.sql.SQLException;
 import java.util.List;

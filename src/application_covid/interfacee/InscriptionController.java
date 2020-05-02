@@ -5,13 +5,10 @@
  */
 package application_covid.interfacee;
 
-import application_covid.entities.Personne;
-import application_covid.services.PersonneCRUD;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -44,32 +41,7 @@ public class InscriptionController implements Initializable {
 
     @FXML
     private void validerPersonne(ActionEvent event) {
-        try {
-            //Sauvegarde de la personne dans la base
-            Personne p = new Personne();
-            p.setNom(tfNom.getText());
-            p.setPrenom(tfPrenom.getText());
-            
-            PersonneCRUD pcd = new PersonneCRUD();
-            pcd.ajouterPersonne2(p);
-            
-            //Redirection vers la page d'affichage
-            
-            FXMLLoader loader =
-                    new FXMLLoader(
-                            getClass().getResource("DetailsPersonne.fxml")
-                    );
-            
-            Parent root2 = loader.load();
-            DetailsPersonneController dpc = loader.getController();
-            dpc.setResNom(tfNom.getText());
-            dpc.setResPrenom(tfPrenom.getText());
-            tfPrenom.getScene().setRoot(root2);
-            
-            
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
+
     }
     
 }
