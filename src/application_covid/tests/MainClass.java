@@ -6,9 +6,7 @@
 package application_covid.tests;
 
 import application_covid.entities.Membre;
-import application_covid.entities.Personne;
 import application_covid.services.MembreCRUD;
-import application_covid.services.PersonneCRUD;
 import application_covid.utils.MyConnection;
 
 /**

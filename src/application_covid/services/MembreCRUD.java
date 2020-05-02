@@ -6,7 +6,6 @@
 package application_covid.services;
 
 import application_covid.entities.Membre;
-import application_covid.entities.Personne;
 import application_covid.utils.MyConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
