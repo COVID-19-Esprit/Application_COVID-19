@@ -18,9 +18,9 @@ import application_covid.utils.MyConnection;
 public class MainClass {
     
     public static void main(String[] args) {
-        MyConnection mc = new MyConnection();
-        MembreCRUD mbc = new MembreCRUD();
-        Membre m = new Membre(9717613 ,"NEFZAOUI","Achref","EntreeVille Nafta", 23 ,"test",54822761);
+        //MyConnection mc = new MyConnection();
+        //MembreCRUD mbc = new MembreCRUD();
+        //Membre m = new Membre(9717613 ,"NEFZAOUI","Achref","EntreeVille Nafta", 23 ,"test",54822761);
         //mbc.supprimerMembre(9717610);
          //mbc.updateMembre(m,9717612);
         //mbc.ajouterMembre2(m);
@@ -35,7 +35,7 @@ public class MainClass {
        //pc.supprimerPersonne(2);
        //Personne p1 = new Personne(14,"Messi", "Lionel");
        //pc.ajouterPersonne2(p1);
-        System.out.println(mbc.displayAll());
+        //System.out.println(mbc.displayAll());
 // pc.updatePersonne(p1, 1);
     }
 }

@@ -25,21 +25,11 @@ public class MembreCRUD {
         cnx = MyConnection.getInstance().getCnx();
     }
      
-    public void ajoutMembre(){
+       public void ajouterMembre(Membre m) {
         try {
-            String requete = "INSERT INTO membre VALUES (09717614 ,'NEFZAOUI','Achref' ,'WAREDNAAM NAFTA', 23 , 'test' , 54825709 ) ";
-            Statement st = cnx.createStatement();
-            st.executeUpdate(requete);
-            System.out.println("membre ajoutee");
-        } catch (SQLException ex) {
-           System.err.println(ex.getMessage());
-        }
-    }
-       public void ajouterMembre2(Membre m) {
-        try {
-            String requete2 = "INSERT INTO membre (cin,nomMembre, prenomMembre, adresseMembre , ageMembre , passwordMembre , telephoneMembre)"
+            String requete = "INSERT INTO membre (cin,nomMembre, prenomMembre, adresseMembre , ageMembre , passwordMembre , telephoneMembre)"
                     + "VALUES (?,?,?,?,?,?,?)";
-            PreparedStatement pst = cnx.prepareStatement(requete2);
+            PreparedStatement pst = cnx.prepareStatement(requete);
             pst.setInt(1,m.getId());
             pst.setString(2, m.getNomMembre());
             pst.setString(3, m.getPrenomMembre());
