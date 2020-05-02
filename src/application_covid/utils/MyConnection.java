@@ -16,16 +16,16 @@ import java.util.logging.Logger;
  * @author House
  */
 public class MyConnection {
-    public String url="jdbc:mysql://localhost:3306/esprit1";
+    public String url="jdbc:mysql://localhost:3306/covid-database";
     public String login="root";
     public String pwd="";
     Connection cnx;
     public static MyConnection instance;
     
-    private MyConnection(){
+    public MyConnection(){
         try {
             cnx = DriverManager.getConnection(url, login, pwd);
-            System.out.println("Connexion établie!");
+            System.out.println("Successful Connection!");
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
