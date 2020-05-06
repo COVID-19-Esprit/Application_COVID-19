@@ -5,8 +5,8 @@
  */
 package application_covid.tests;
 
-import application_covid.entities.Personne;
-import application_covid.services.PersonneCRUD;
+import application_covid.entities.Information;
+import application_covid.services.InformationCRUD;
 import application_covid.utils.MyConnection;
 
 /**
@@ -16,17 +16,13 @@ import application_covid.utils.MyConnection;
 public class MainClass {
     
     public static void main(String[] args) {
-       // MyConnection mc = MyConnection.getInstance();
-       // MyConnection mc2 = MyConnection.getInstance();
-       // System.out.println(mc.hashCode()+ " -- "+mc2.hashCode());
-        PersonneCRUD pc = new PersonneCRUD();
-       //pc.ajouterPersonne();
-       //Personne p = new Personne(55, "Ben Salem", "Nader");
-       //pc.ajouterPersonne2(p);
-       //pc.supprimerPersonne(2);
-       Personne p1 = new Personne(14,"Messi", "Lionel");
-       pc.ajouterPersonne2(p1);
-        System.out.println(pc.displayAll());
-// pc.updatePersonne(p1, 1);
+        MyConnection mc = MyConnection.getInstance();
+        InformationCRUD ic = new InformationCRUD();
+        Information i = new Information(5, "titre1", "bababaabb");
+        //ic.ajouterInformation(i);
+        System.out.println(ic.displayAll());
+        Information i2 = new Information(8, "titre8", "bksddksidjib");
+        //ic.updateInformation(i2, 1);
+        ic.supprimerInformation(1);
     }
 }

@@ -7,21 +7,14 @@ package application_covid.interfacee;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
- * @author House
+ * @author Rihab
  */
-public class DetailsPersonneController implements Initializable {
-
-    @FXML
-    private TextField resNom;
-    @FXML
-    private TextField resPrenom;
+public class HomePageController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -30,15 +23,5 @@ public class DetailsPersonneController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    public void setResNom(String valNom) {
-        this.resNom.setText(valNom);
-    }
-    
-
-    public void setResPrenom(String valPrenom) {
-       this.resPrenom.setText(valPrenom);
-    }
-    
     
 }

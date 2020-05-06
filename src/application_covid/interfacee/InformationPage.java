@@ -6,6 +6,8 @@
 package application_covid.interfacee;
 
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -18,17 +20,19 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Rihab
+ * @author House
  */
-public class HomePage extends Application {
+public class InformationPage extends Application {
     
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+            Parent root = FXMLLoader.load(getClass()
+                    .getResource("Information.fxml"));
+            
             Scene scene = new Scene(root);
             
-            primaryStage.setTitle("HomePage");
+            primaryStage.setTitle("Information");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {

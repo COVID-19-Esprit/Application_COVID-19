@@ -5,8 +5,8 @@
  */
 package application_covid.interfacee;
 
-import application_covid.entities.Personne;
-import application_covid.services.PersonneCRUD;
+import application_covid.entities.Information;
+import application_covid.services.InformationCRUD;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -25,12 +25,12 @@ import javafx.scene.control.TextField;
  *
  * @author House
  */
-public class InscriptionController implements Initializable {
+public class InformationController implements Initializable {
 
     @FXML
-    private TextField tfNom;
+    private TextField tfTitre;
     @FXML
-    private TextField tfPrenom;
+    private TextField tfContent;
     @FXML
     private Button btnValider;
 
@@ -43,28 +43,28 @@ public class InscriptionController implements Initializable {
     }    
 
     @FXML
-    private void validerPersonne(ActionEvent event) {
+    private void validerInformation(ActionEvent event) {
         try {
             //Sauvegarde de la personne dans la base
-            Personne p = new Personne();
-            p.setNom(tfNom.getText());
-            p.setPrenom(tfPrenom.getText());
+            Information i = new Information();
+            i.setTitre(tfTitre.getText());
+            i.setContent(tfContent.getText());
             
-            PersonneCRUD pcd = new PersonneCRUD();
-            pcd.ajouterPersonne2(p);
+            InformationCRUD icd = new InformationCRUD();
+            icd.ajouterInformation(i);
             
             //Redirection vers la page d'affichage
             
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("DetailsPersonne.fxml")
+                            getClass().getResource("DetailsInformation.fxml")
                     );
             
             Parent root2 = loader.load();
-            DetailsPersonneController dpc = loader.getController();
-            dpc.setResNom(tfNom.getText());
-            dpc.setResPrenom(tfPrenom.getText());
-            tfPrenom.getScene().setRoot(root2);
+            DetailsInformationController dic = loader.getController();
+            dic.setResTitre(tfTitre.getText());
+            dic.setResContent(tfContent.getText());
+            tfContent.getScene().setRoot(root2);
             
             
         } catch (IOException ex) {
