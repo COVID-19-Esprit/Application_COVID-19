@@ -28,6 +28,8 @@ public class Choix_utilisateurController implements Initializable {
     private Button tfmala;
     @FXML
     private Button tfvolo;
+    @FXML
+    private Button lastnew;
 
     /**
      * Initializes the controller class.
@@ -85,6 +87,11 @@ public class Choix_utilisateurController implements Initializable {
         } catch (IOException ex) {
             System.err.println(ex.getMessage());        }
     }
+
+    @FXML
+    private void lastnew(ActionEvent event) {
+    }
+
 
 
         

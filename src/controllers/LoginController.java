@@ -5,6 +5,7 @@ package controllers;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import entities.Utilisateur_Volontaire;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -12,6 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import static javafx.beans.binding.Bindings.and;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,6 +27,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import static javax.management.Query.and;
+import services.JavaMailUtil;
 import utils.myconnection;
 
 /**
@@ -50,10 +54,10 @@ public class LoginController implements Initializable {
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;
     @FXML
-    private Label btnForgot;
+    private Button order;
 
     @FXML
-    public void handleButtonAction(MouseEvent event) {
+    public void handleButtonAction(MouseEvent event) throws Exception {
 
         if (event.getSource() == btnSignin) {
             //login here
@@ -65,11 +69,13 @@ public class LoginController implements Initializable {
                     Stage stage = (Stage) node.getScene().getWindow();
                     //stage.setMaximized(true);
                     stage.close();
-                    Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/fxml/Liste_des_commandes.fxml")));
+                    Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/interfacee/Liste_des_commandes.fxml")));
                     stage.setScene(scene);
                     stage.show();
+                    
 
-                } catch (IOException ex) {
+                    
+           } catch (IOException ex) {
                     System.err.println(ex.getMessage());
                 }
 
@@ -94,34 +100,53 @@ public class LoginController implements Initializable {
     }
 
     //we gonna use string to check for status
-    private String logIn() {
+    private String logIn() throws Exception {
         String status = "Success";
         String email = txtUsername.getText();
         String password = txtPassword.getText();
+       
+        
         if(email.isEmpty() || password.isEmpty()) {
             setLblError(Color.TOMATO, "Empty credentials");
             status = "Error";
-        } else {
+        } 
+        
+      
+        
+        else {
             //query
             String sql = "SELECT * FROM malade Where mailMalade = ? and code = ?";
+            // String sql1 = "SELECT * FROM admin Where login = ? and password = ?";
+             // String sql2 = "SELECT * FROM volontaire Where mail = ? and code = ?";
+
             try {
                 preparedStatement = con.prepareStatement(sql);
                 preparedStatement.setString(1, email);
                 preparedStatement.setString(2, password);
+                
                 resultSet = preparedStatement.executeQuery();
+              
+             /*   preparedStatement = con.prepareStatement(sql2);
+                preparedStatement.setString(1,email);
+                preparedStatement.setString(2,password);
+                */
+               // resultSet = preparedStatement.executeQuery();
                 if (!resultSet.next()) {
                     setLblError(Color.TOMATO, "Enter Correct Email/Password");
                     status = "Error";
                 } else {
+                                  //      JavaMailUtil.main(email);
                     setLblError(Color.GREEN, "Login Successful..Redirecting..");
                 }
+                
+             
             } catch (SQLException ex) {
                 System.err.println(ex.getMessage());
                 status = "Exception";
             }
         }
         
-        return status;
+     return status;
     }
     
     private void setLblError(Color color, String text) {
@@ -145,5 +170,38 @@ public class LoginController implements Initializable {
             txtUsername.getScene().setRoot(root2);
         } catch (IOException ex) {
             System.err.println(ex.getMessage());        }
+    }
+
+    @FXML
+    private void forgetpassword(ActionEvent event) throws Exception  {
+        try {
+            
+            FXMLLoader loader =
+                    new FXMLLoader(
+                            getClass().getResource("/interfacee/reset_password.fxml")
+                    );
+            
+            Parent root2 = loader.load();
+            Reset_passwordController dpc = loader.getController();
+              String email = txtUsername.getText();
+        String password = txtPassword.getText(); 
+              JavaMailUtil.main(email);
+            txtUsername.getScene().setRoot(root2);
+           
+        } catch (IOException ex) {
+            System.err.println(ex.getMessage());        }
+        
+        
+        
+        
+        
+        
+        
+        
+
+    }
+
+    @FXML
+    private void orderr(ActionEvent event) {
     }
 }

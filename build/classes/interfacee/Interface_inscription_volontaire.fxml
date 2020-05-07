@@ -10,9 +10,9 @@
 
 <AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Interface_inscription_volontaireController">
    <children>
-      <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="150.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
+      <AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="1501.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
          <children>
-            <AnchorPane layoutX="703.0" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="389.0" style="-fx-background-color: #820404;">
+            <AnchorPane layoutX="92.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="389.0" style="-fx-background-color: #820404;">
                <effect>
                   <DropShadow height="231.48" radius="115.19" spread="0.61" width="231.28" />
                </effect>
@@ -20,7 +20,7 @@
                   <TextField fx:id="tfidd" layoutX="109.0" layoutY="34.0" prefHeight="25.0" prefWidth="210.0" promptText="Id" style="-fx-background-color: ffffff;" />
                   <TextField fx:id="tfnomm" layoutX="109.0" layoutY="77.0" prefHeight="25.0" prefWidth="210.0" promptText="Last Name" style="-fx-background-color: ffffff;" />
                   <TextField fx:id="tfprenomm" layoutX="109.0" layoutY="124.0" prefHeight="25.0" prefWidth="210.0" promptText="First Name" style="-fx-background-color: ffffff;" />
-                  <Label layoutX="84.0" layoutY="38.0" text="Id :" textFill="WHITE" />
+                  <Label layoutX="76.0" layoutY="38.0" text="User :" textFill="WHITE" />
                   <Label layoutX="41.0" layoutY="81.0" text="Last Name :" textFill="WHITE" />
                   <Label layoutX="39.0" layoutY="128.0" text="First Name :" textFill="WHITE" />
                   <Label layoutX="23.0" layoutY="172.0" text="Date of Birth :" textFill="WHITE" />
@@ -47,52 +47,19 @@
                   <JFXDatePicker layoutX="109.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" />
                </children>
             </AnchorPane>
-            <Label layoutX="727.0" layoutY="14.0" text="COVID-19 APPLICATION" textFill="WHITE">
+            <Label layoutX="839.0" layoutY="223.0" text="COVID-19 APPLICATION" textFill="WHITE">
                <font>
                   <Font size="35.0" />
                </font>
             </Label>
-            <Label layoutX="648.0" layoutY="65.0" prefHeight="34.0" prefWidth="709.0" text="If you create an account in your application you will receive all  news" textFill="WHITE">
+            <Label layoutX="760.0" layoutY="274.0" prefHeight="34.0" prefWidth="709.0" text="If you create an account in your application you will receive all  news" textFill="WHITE">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="691.0" layoutY="99.0" text=" about the pandemic covid-19 in tunisia  and all the world ." textFill="WHITE">
+            <Label layoutX="803.0" layoutY="308.0" text=" about the pandemic covid-19 in tunisia  and all the world ." textFill="WHITE">
                <font>
                   <Font size="19.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="279.0" style="-fx-background-color: #939090;">
-         <effect>
-            <DropShadow blurType="ONE_PASS_BOX" color="#bf2222" height="147.02" radius="65.9675" spread="0.76" width="118.85" />
-         </effect>
-         <children>
-            <Label layoutX="86.0" layoutY="39.0" text="COVID 19">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <effect>
-                  <DropShadow height="0.0" radius="0.0" width="0.0" />
-               </effect>
-            </Label>
-            <Label layoutX="61.0" layoutY="65.0" text=" APPLICATION">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <effect>
-                  <DropShadow height="0.0" radius="0.0" width="0.0" />
-               </effect>
-            </Label>
-            <Button layoutX="43.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="What is Covid-19 ?" />
-            <Button layoutX="45.0" layoutY="273.0" mnemonicParsing="false" text="Protect yourself from Covid-19 ?" />
-            <Button layoutX="43.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Quiz test Covid-19" />
-            <Button fx:id="lastnew" layoutX="43.0" layoutY="360.0" mnemonicParsing="false" onAction="#lastnew" prefHeight="25.0" prefWidth="188.0" text="Last New" />
-            <Button fx:id="order" layoutX="43.0" layoutY="403.0" mnemonicParsing="false" onAction="#order" prefHeight="25.0" prefWidth="188.0" text="Order" />
-            <Label layoutX="28.0" layoutY="145.0" text="Create a New Account">
-               <font>
-                  <Font size="22.0" />
                </font>
             </Label>
          </children>

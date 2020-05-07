@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Interface_inscription_maladeController">
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="1100.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Interface_inscription_maladeController">
    <children>
-      <AnchorPane layoutX="115.0" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="389.0" style="-fx-background-color: #490303;">
+      <AnchorPane layoutX="700.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="389.0" style="-fx-background-color: #490303;">
          <effect>
             <DropShadow color="#0d0101" height="232.86" radius="115.535" spread="0.58" width="231.28" />
          </effect>
@@ -19,7 +19,7 @@
             <TextField fx:id="tfid" layoutX="109.0" layoutY="34.0" prefHeight="25.0" prefWidth="210.0" promptText="Id" style="-fx-background-color: ffffff;" />
             <TextField fx:id="tfnom" layoutX="109.0" layoutY="77.0" prefHeight="25.0" prefWidth="210.0" promptText="Last Name" style="-fx-background-color: ffffff;" />
             <TextField fx:id="tfprenom" layoutX="109.0" layoutY="124.0" prefHeight="25.0" prefWidth="210.0" promptText="First Name" style="-fx-background-color: ffffff;" />
-            <Label layoutX="40.0" layoutY="38.0" text="UserName : " textFill="WHITE" />
+            <Label layoutX="64.0" layoutY="38.0" text="Id :" textFill="WHITE" />
             <Label layoutX="39.0" layoutY="81.0" text="Last Name  : " textFill="WHITE" />
             <Label layoutX="39.0" layoutY="128.0" text="First Name : " textFill="WHITE" />
             <Label layoutX="32.0" layoutY="172.0" text="Date of Birth :" textFill="WHITE" />
@@ -31,12 +31,12 @@
             <TextField fx:id="tftelephone" layoutX="111.0" layoutY="257.0" prefHeight="25.0" prefWidth="210.0" promptText="Contact" />
             <TextField fx:id="tfmail" layoutX="111.0" layoutY="298.0" prefHeight="25.0" prefWidth="210.0" promptText="Email" />
             <TextField fx:id="tfmdp" accessibleRole="PASSWORD_FIELD" layoutX="111.0" layoutY="338.0" />
-            <Button layoutX="219.0" layoutY="442.0" mnemonicParsing="false" onAction="#ajouterMalade" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Submet">
+            <Button layoutX="219.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterMalade" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Submet">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="43.0" layoutY="442.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
+            <Button layoutX="43.0" layoutY="420.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
                <font>
                   <Font size="14.0" />
                </font>
@@ -45,20 +45,53 @@
             <JFXDatePicker fx:id="tfage" defaultColor="#338dcc" layoutX="109.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" promptText=" Date Of Birth" style="-fx-background-color: white;" />
          </children>
       </AnchorPane>
-      <Label layoutX="827.0" layoutY="228.0" text="COVID-19 APPLICATION" textFill="WHITE">
+      <Label layoutX="702.0" layoutY="29.0" text="COVID-19 APPLICATION" textFill="WHITE">
          <font>
             <Font size="35.0" />
          </font>
       </Label>
-      <Label layoutX="748.0" layoutY="279.0" prefHeight="34.0" prefWidth="671.0" text="If you create an account in your application you will receive all  news" textFill="WHITE">
+      <Label layoutX="623.0" layoutY="72.0" prefHeight="34.0" prefWidth="671.0" text="If you create an account in your application you will receive all  news" textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <Label layoutX="791.0" layoutY="313.0" text=" about the pandemic covid-19 in tunisia  and all the world ." textFill="WHITE">
+      <Label layoutX="666.0" layoutY="106.0" text=" about the pandemic covid-19 in tunisia  and all the world ." textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="279.0" style="-fx-background-color: #939090;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#bf2222" height="147.02" radius="65.9675" spread="0.76" width="118.85" />
+         </effect>
+         <children>
+            <Label layoutX="86.0" layoutY="39.0" text="COVID 19">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Label layoutX="61.0" layoutY="65.0" text=" APPLICATION">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Button layoutX="43.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="What is Covid-19 ?" />
+            <Button layoutX="45.0" layoutY="273.0" mnemonicParsing="false" text="Protect yourself from Covid-19 ?" />
+            <Button layoutX="43.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Quiz test Covid-19" />
+            <Button layoutX="43.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Last New" />
+            <Button layoutX="43.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Order" />
+            <Label layoutX="28.0" layoutY="145.0" text="Create a New Account">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

@@ -5,24 +5,47 @@
  */
 package controllers;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 
 /**
  * FXML Controller class
  *
  * @author Achref
  */
-public class Liste_des_commandesController implements Initializable {
+public class Admin_interfaceController implements Initializable {
 
-    private Button txt;
+    @FXML
+    private Button affmalade;
+    @FXML
+    private Button affvolontaire;
+
+
+    @FXML
+    private TableColumn<?, ?> tfid;
+    @FXML
+    private TableColumn<?, ?> tfnom;
+    @FXML
+    private TableColumn<?, ?> tfprenom;
+    @FXML
+    private TableColumn<?, ?> tfage;
+    @FXML
+    private TableColumn<?, ?> tfadresse;
+    @FXML
+    private TableColumn<?, ?> tfcontact;
+    @FXML
+    private TableColumn<?, ?> tfmail;
+    @FXML
+    private Button affvolontaire1;
+    @FXML
+    private Button affvolontaire11;
+    @FXML
+    private Button affvolontaire12;
     @FXML
     private Button lastnew;
     @FXML
@@ -37,24 +60,19 @@ public class Liste_des_commandesController implements Initializable {
     }    
 
     @FXML
-    private void order(ActionEvent event) {
+    private void affmalade(ActionEvent event) {
+        
     }
 
+   
     @FXML
-    private void retour(ActionEvent event) {
-        
-          try {
-            FXMLLoader loader =
-                    new FXMLLoader(
-                            getClass().getResource("/interfacee/Login.fxml")
-                    );
-            
-            Parent root2 = loader.load();
-            LoginController dpc = loader.getController();
-           
-            txt.getScene().setRoot(root2);
-        } catch (IOException ex) {
-            System.err.println(ex.getMessage());        }
+    private void order(ActionEvent event) {
+    }
+    
+    
+
+    @FXML
+    private void affvolontaire(ActionEvent event) {
     }
 
     @FXML

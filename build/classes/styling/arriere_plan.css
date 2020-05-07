@@ -4,11 +4,6 @@
     -fx-background-image:url('covid19.jpeg');
     -fx-background-size:cover;
 }
-.home{
-    
-    -fx-background-image:url('home.PNG');
-    -fx-background-size:cover;
-}
 
 .bodyyy{
     

@@ -20,11 +20,9 @@ import javafx.scene.control.Button;
  *
  * @author Achref
  */
-public class Liste_des_commandesController implements Initializable {
+public class Home_pageController implements Initializable {
 
     private Button txt;
-    @FXML
-    private Button lastnew;
     @FXML
     private Button order;
 
@@ -38,27 +36,25 @@ public class Liste_des_commandesController implements Initializable {
 
     @FXML
     private void order(ActionEvent event) {
-    }
-
-    @FXML
-    private void retour(ActionEvent event) {
         
-          try {
+            try {
             FXMLLoader loader =
                     new FXMLLoader(
                             getClass().getResource("/interfacee/Login.fxml")
                     );
             
             Parent root2 = loader.load();
-            LoginController dpc = loader.getController();
+            controllers.LoginController dpc = loader.getController();
            
-            txt.getScene().setRoot(root2);
+            order.getScene().setRoot(root2);
         } catch (IOException ex) {
             System.err.println(ex.getMessage());        }
     }
 
-    @FXML
+   /* @FXML
     private void lastnew(ActionEvent event) {
+    }*/
     }
     
-}
+    
+

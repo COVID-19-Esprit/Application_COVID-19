@@ -14,15 +14,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
  * @author Achref
  */
-public class Liste_des_commandesController implements Initializable {
+public class Reset_passwordController implements Initializable {
 
-    private Button txt;
+    @FXML
+    private TextField code;
     @FXML
     private Button lastnew;
     @FXML
@@ -37,13 +39,8 @@ public class Liste_des_commandesController implements Initializable {
     }    
 
     @FXML
-    private void order(ActionEvent event) {
-    }
-
-    @FXML
     private void retour(ActionEvent event) {
-        
-          try {
+         try {
             FXMLLoader loader =
                     new FXMLLoader(
                             getClass().getResource("/interfacee/Login.fxml")
@@ -52,10 +49,24 @@ public class Liste_des_commandesController implements Initializable {
             Parent root2 = loader.load();
             LoginController dpc = loader.getController();
            
-            txt.getScene().setRoot(root2);
+            code.getScene().setRoot(root2);
         } catch (IOException ex) {
             System.err.println(ex.getMessage());        }
     }
+
+    @FXML
+    private void confirmation(ActionEvent event) {
+    }
+
+    
+
+    @FXML
+    private void order(ActionEvent event) {
+    }
+
+   /* @FXML
+    private void tfmalade(ActionEvent event) {
+    }*/
 
     @FXML
     private void lastnew(ActionEvent event) {

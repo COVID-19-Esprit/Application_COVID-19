@@ -6,21 +6,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Choix_utilisateurController">
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Choix_utilisateurController">
    <children>
-      <AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="702.0" style="-fx-border-color: write;" styleClass="bodybg" stylesheets="@arriere_plan.css">
+      <AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="700.0" style="-fx-border-color: write;" styleClass="bodybg" stylesheets="@arriere_plan.css">
          <effect>
             <DropShadow radius="4.75" width="0.0" />
          </effect>
       </AnchorPane>
-      <AnchorPane id="AnchorPane" prefHeight="737.0" prefWidth="1443.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
+      <AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="1402.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
          <children>
-            <AnchorPane layoutX="93.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="389.0" style="-fx-background-color: #820404;">
+            <AnchorPane layoutX="741.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="389.0" style="-fx-background-color: #820404;">
                <effect>
                   <DropShadow height="231.48" radius="115.19" spread="0.61" width="231.28" />
                </effect>
                <children>
-                  <Button fx:id="tfmala" layoutX="131.0" layoutY="203.0" mnemonicParsing="false" onAction="#tfmalade" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Sick">
+                  <Button fx:id="tfmala" layoutX="131.0" layoutY="203.0" mnemonicParsing="false" onAction="#tfmalade" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Patient ">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -28,7 +28,7 @@
                         <DropShadow radius="53.735" spread="0.37" width="195.94" />
                      </effect>
                   </Button>
-                  <Button layoutX="131.0" layoutY="381.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
+                  <Button layoutX="131.0" layoutY="360.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -36,7 +36,7 @@
                         <DropShadow radius="53.675" spread="0.33" width="195.7" />
                      </effect>
                   </Button>
-                  <Button fx:id="tfvolo" layoutX="131.0" layoutY="290.0" mnemonicParsing="false" onAction="#tfvolontaire" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Voluntary">
+                  <Button fx:id="tfvolo" layoutX="131.0" layoutY="279.0" mnemonicParsing="false" onAction="#tfvolontaire" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Voluntary">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -52,8 +52,44 @@
                         <DropShadow height="123.17" radius="94.0425" spread="0.93" width="255.0" />
                      </effect>
                   </Label>
+                  <Button layoutX="131.0" layoutY="436.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Home">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow radius="53.675" spread="0.33" width="195.7" />
+                     </effect>
+                  </Button>
                </children>
             </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="279.0" style="-fx-background-color: #939090;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#bf2222" height="147.02" radius="65.9675" spread="0.76" width="118.85" />
+         </effect>
+         <children>
+            <Label layoutX="88.0" layoutY="131.0" text="COVID 19">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Label layoutX="63.0" layoutY="157.0" text=" APPLICATION">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Button layoutX="43.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="What is Covid-19 ?" />
+            <Button layoutX="45.0" layoutY="273.0" mnemonicParsing="false" text="Protect yourself from Covid-19 ?" />
+            <Button layoutX="43.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Quiz test Covid-19" />
+            <Button fx:id="lastnew" layoutX="43.0" layoutY="360.0" mnemonicParsing="false" onAction="#lastnew" prefHeight="25.0" prefWidth="188.0" text="Last New" />
+            <Button layoutX="43.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Order" />
          </children>
       </AnchorPane>
    </children>

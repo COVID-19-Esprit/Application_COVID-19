@@ -14,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 /**
@@ -29,16 +30,20 @@ public class Interface_inscription_volontaireController implements Initializable
     private TextField tfnomm;
     @FXML
     private TextField tfprenomm;
-    @FXML
     private TextField tfadd;
     @FXML
     private TextField tftelephonee;
     @FXML
     private TextField tfmaill;
-    @FXML
     private TextField tfasso;
     @FXML
     private TextField tfmp;
+    @FXML
+    private TextField tfadresse;
+    @FXML
+    private Button lastnew;
+    @FXML
+    private Button order;
 
     /**
      * Initializes the controller class.
@@ -79,6 +84,14 @@ public class Interface_inscription_volontaireController implements Initializable
             tfnomm.getScene().setRoot(root2);
         } catch (IOException ex) {
             System.err.println(ex.getMessage());        }
+    }
+
+    @FXML
+    private void lastnew(ActionEvent event) {
+    }
+
+    @FXML
+    private void order(ActionEvent event) {
     }
     
 }
