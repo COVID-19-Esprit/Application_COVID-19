@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="770.0" prefWidth="1104.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Admin.DashbordController">
+    <stylesheets>
+        <URL value="@dashbord.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="-2.0" layoutY="-6.0" prefHeight="780.0" prefWidth="300.0" style="-fx-background-color: #333645;" styleClass="parent" stylesheets="@dashbord.css">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="96.0" prefWidth="300.0" style="-fx-background-color: #2d8dfd;" text="Admin Panel " textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <FontAwesomeIcon fill="#bfb9b9" glyphName="SEARCH" size="1.3em" wrappingWidth="24.0" />
+                  <TextField promptText="Search" style="-fx-background-color: transparent;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="116.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIcon fill="#b5b4b4" glyphName="DASHBOARD" size="1.3em" wrappingWidth="24.0" />
+                  <Label text="Dashbord" textFill="#b5b4b4">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Light" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="157.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIcon fill="#b5b4b4" glyphName="LIST" size="1.3em" wrappingWidth="24.0" />
+                  <Label text="Projects" textFill="#b5b4b4">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Light" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="197.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIcon fill="#b5b4b4" glyphName="USERS" size="1.3em" wrappingWidth="24.0" />
+                  <Label text="Users" textFill="#b5b4b4">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Light" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="237.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIcon fill="#b5b4b4" glyphName="FOLDER" size="1.3em" wrappingWidth="24.0" />
+                  <Label text="Documents" textFill="#b5b4b4">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Light" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="277.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <FontAwesomeIcon fill="#b5b4b4" glyphName="FILE" size="1.3em" wrappingWidth="24.0" />
+                  <Label text="Resource" textFill="#b5b4b4">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Light" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="TEAM INVLOVED" textFill="#b5b4b4">
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="78.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../application_covid/interfacee/Images/business+face+people+icon-1320086457520622872.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="300.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Nef Achref " textFill="#b8b5b5" />
+                              <Label prefWidth="300.0" text="Web Developer" textFill="#9e9a9a" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="50.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="78.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../application_covid/interfacee/Images/flat-faces-icons-square-man-9.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="300.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Chammeli Kacem " textFill="#b8b5b5" />
+                              <Label prefWidth="300.0" text="Cloud Developer" textFill="#9e9a9a" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="130.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="78.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../application_covid/interfacee/Images/flat-faces-icons-circle-woman-7.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="300.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Jemai Rihab" textFill="#b8b5b5" />
+                              <Label prefWidth="300.0" text="Developer" textFill="#9e9a9a" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="170.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="78.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../application_covid/interfacee/Images/flat-faces-icons-circle-man-6.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="300.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Hamemi Achref" textFill="#b8b5b5" />
+                              <Label prefWidth="300.0" text="Software Developer" textFill="#9e9a9a" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="230.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="78.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../application_covid/interfacee/Images/face-1659511-1410033.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="300.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Sadem Yassine" textFill="#b8b5b5" />
+                              <Label prefWidth="300.0" text="Mobile Developer" textFill="#9e9a9a" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="213.0" style="-fx-background-color: #2d8dfd;" text="Add Teammate" textFill="#fffafa">
+               <VBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </VBox.margin>
+               <graphic>
+                  <FontAwesomeIcon fill="#f8f8f8" glyphName="PLUS_CIRCLE" size="1.2em" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="297.0" layoutY="-5.0" prefHeight="96.0" prefWidth="809.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="73.0" layoutY="33.0" text="Dashboard">
+               <font>
+                  <Font name="Calibri Light" size="25.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#6f6d6d" glyphName="BELL" layoutX="717.0" layoutY="51.0" size="1.5em" />
+            <FontAwesomeIcon fill="#6f6d6d" glyphName="GEAR" layoutX="756.0" layoutY="52.0" size="1.5em" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <ImageView fitHeight="428.0" fitWidth="934.0" layoutX="298.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../application_covid/interfacee/Images/stat.PNG" />
+         </image>
+      </ImageView>
+      <VBox layoutX="297.0" layoutY="528.0" prefHeight="246.0" prefWidth="270.0" style="-fx-background-color: #d4e7ff;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="270.0" style="-fx-background-color: #2d8dfd;" text="Total Projects" textFill="#1e1d1d">
+               <font>
+                  <Font name="Arial Narrow" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="567.0" layoutY="528.0" prefHeight="246.0" prefWidth="270.0" style="-fx-background-color: #F0E68C;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="270.0" style="-fx-background-color: #FFD700;" text="Completed Projects" textFill="#1b1b1b">
+               <font>
+                  <Font name="Arial Narrow" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="837.0" layoutY="528.0" prefHeight="246.0" prefWidth="270.0" style="-fx-background-color: #90EE90;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="270.0" style="-fx-background-color: #32CD32;" text="Running Projects" textFill="#171717">
+               <font>
+                  <Font name="Arial Narrow" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -16,6 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 
 public class MembreCRUD {
     Connection cnx;
@@ -34,12 +39,44 @@ public class MembreCRUD {
             pst.setString(3, m.getPrenomMembre());
             pst.setString(4, m.getAdresseMembre());
             pst.setInt(5, m.getAge());
-            pst.setString(6, m.getPasswordMembre());
+            String dataPassword = m.getPasswordMembre();
+            CryptoInterface crypto = new Crypto();
+            String enc = new String(crypto.encrypt(dataPassword.getBytes()));
+            pst.setString(6, enc);
             pst.setInt(7, m.getTelephoneMembre());
             pst.executeUpdate();
             System.out.println("Membre Added!");
+             Notifications notificationBuilder = Notifications.create()
+                .title("Membre added successfully")
+                .text("Welcome your are a membre of our application")
+                .graphic(null)
+                .darkStyle()
+                .hideAfter(Duration.seconds(5))
+                .position(Pos.TOP_RIGHT)
+                .onAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("thank you");
+            }
+        });
+        notificationBuilder.showConfirm();
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
+            Notifications notificationBuilder = Notifications.create()
+                .title("Membre dosn't added")
+                .text("Please try again!")
+                .graphic(null)
+                .darkStyle()
+                .hideAfter(Duration.seconds(5))
+                .position(Pos.BOTTOM_RIGHT)
+                .onAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("thank you");
+            }
+        });
+        notificationBuilder.showError();
+           
         }
     }
        

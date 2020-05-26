@@ -1,20 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package application_covid.interfacee;
+package application_covid.controllers;
 
 import application_covid.entities.Membre;
 import application_covid.services.MembreCRUD;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 
 /**
  * FXML Controller class
@@ -71,12 +71,12 @@ public class InscriptionMembreController implements Initializable {
         m.setPasswordMembre(membrePassword.getText());
         
         MembreCRUD mbc = new MembreCRUD();
+
         mbc.ajouterMembre(m);
-        
+       
         
         
         
     }
-    
-    
+
 }

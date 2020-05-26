@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="1052.0" style="-fx-background-color: #010f1a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.StatisticsController">
+    <stylesheets>
+        <URL value="@statistics.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="colCases" layoutX="249.0" layoutY="84.0" prefHeight="56.0" prefWidth="97.0" text="label" textFill="#bcc647">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="89.0" prefHeight="45.0" prefWidth="97.0" text="Cases " textFill="#bcc647">
+         <font>
+            <Font name="Arial Narrow" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="colRecoverd" layoutX="254.0" layoutY="143.0" text="label" textFill="#56f466">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="149.0" text="Recovered" textFill="#56f466">
+         <font>
+            <Font name="Arial Narrow" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="207.0" text="Deaths" textFill="#838383">
+         <font>
+            <Font name="Arial Narrow" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="colDeaths" layoutX="258.0" layoutY="199.0" prefHeight="49.0" prefWidth="80.0" text="label" textFill="#838383">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="274.0" text="Active Cases" textFill="#ea1212">
+         <font>
+            <Font name="Arial Narrow" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="colCritical" layoutX="262.0" layoutY="268.0" text="label" textFill="#ea1212">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="330.0" text="Total Tests" textFill="#eeecec">
+         <font>
+            <Font name="Arial Narrow" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="colTests" layoutX="262.0" layoutY="321.0" text="label" textFill="#ebe9e9">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="349.0" fitWidth="688.0" layoutX="376.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/CARTE-Coronavirus-le-point-sur-l-epidemie-pays-par-pays.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="31.0" layoutY="414.0" prefHeight="156.0" prefWidth="182.0">
+         <children>
+            <Label text="Today Cases" textFill="#1b4a66">
+               <font>
+                  <Font name="Arial Narrow" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="colTodayCases" textFill="#1b4a66">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="236.0" layoutY="422.0" prefHeight="156.0" prefWidth="182.0">
+         <children>
+            <Label text="Today Deaths" textFill="#1b4a66">
+               <font>
+                  <Font name="Arial Narrow" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="colTodayDeaths" textFill="#1b4a66">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="49.0" fitWidth="73.0" layoutX="44.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/d8cd41e4d0f308aacd01bf4eaa83f7a7.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" layoutY="31.0" text="TUNISIA COVID-19" textFill="#b12119">
+         <font>
+            <Font name="Arial Narrow" size="21.0" />
+         </font>
+      </Label>
+      <VBox layoutX="515.0" layoutY="447.0" prefHeight="82.0" prefWidth="159.0" style="-fx-background-color: #8ac0cf;">
+         <children>
+            <Label style="-fx-background-color: transparent;" text="Percentage Recovered " textFill="#1b4a66">
+               <font>
+                  <Font name="Arial Narrow" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="colPer" textFill="#1b4a66">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="76.98" radius="29.4375" width="42.77" />
+         </effect>
+      </VBox>
+      <VBox layoutX="699.0" layoutY="447.0" prefHeight="82.0" prefWidth="138.0" style="-fx-background-color: #8ac0cf;">
+         <children>
+            <Label style="-fx-background-color: transparent;" text="Percentage Deaths " textFill="#1b4a66">
+               <font>
+                  <Font name="Arial Narrow" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="colPer1" textFill="#1b4a66">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="76.98" radius="29.4375" width="42.77" />
+         </effect>
+      </VBox>
+      <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="949.0" layoutY="447.0" onDragDetected="#ChangeScreenWorld" onDragDone="#ChangeScreenWorld" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/44386%20copie.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="920.0" layoutY="514.0" mnemonicParsing="false" onAction="#ChangeScreenWorld" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #ea1212;" text="Go to World " textFill="#eee9e9" />
+   </children>
+</AnchorPane>
