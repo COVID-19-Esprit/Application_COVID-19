@@ -22,8 +22,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import static java.lang.Thread.sleep;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -37,6 +40,10 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import org.apache.commons.io.IOUtils;
+import com.teknikindustries.yahooweather.WeatherDisplay;
+import com.teknikindustries.yahooweather.WeatherDoc;
+import java.io.BufferedInputStream;
+
 
 /**
  * FXML Controller class
@@ -54,6 +61,8 @@ public class WordStatisticsController implements Initializable {
     private Label colDeaths;
     @FXML
     private Label colRec;
+    @FXML
+    private Label clocklbl;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
@@ -99,8 +108,19 @@ public class WordStatisticsController implements Initializable {
               colDeaths.setText(deaths);
               colRec.setText(recCopy);
 
-         
-               
+                Calendar cal=new GregorianCalendar();
+                
+                int day =cal.get(Calendar.DAY_OF_MONTH);
+                int month =cal.get(Calendar.MONTH);
+                int year =cal.get(Calendar.YEAR);
+                clocklbl.setText(day+"/"+month+"/"+year);
+ 
+
+               WeatherDoc doc= new WeatherDoc("36.8688529","10.1353404,13z");
+               WeatherDisplay disp = new WeatherDisplay();
+               System.out.println(disp.getTemperature());
+               System.out.println(disp.getHumidity());
+
                
                 
             }

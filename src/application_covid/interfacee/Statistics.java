@@ -48,12 +48,6 @@ public class Statistics extends Application {
         }
     }
 
-    public void getWeather() {
-        WeatherDoc doc = new WeatherDoc("589295", "c");
-        WeatherDisplay disp = new WeatherDisplay();
-        System.out.println(disp.getTemperature());
-
-    }
 
     public static void main(String[] args) {
         launch(args);

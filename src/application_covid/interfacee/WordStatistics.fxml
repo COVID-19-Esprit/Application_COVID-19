@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="979.0" style="-fx-background-color: #010f1a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.WordStatisticsController">
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="1040.0" style="-fx-background-color: #010f1a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.WordStatisticsController">
     <stylesheets>
         <URL value="@wordstatistics.css" />
     </stylesheets>
@@ -82,6 +82,18 @@
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" color="#030202" height="66.09" radius="43.8175" width="111.18" />
          </effect>
+      </Pane>
+      <Pane layoutX="712.0" layoutY="295.0" prefHeight="93.0" prefWidth="297.0" style="-fx-background-color: transaparent;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label fx:id="clocklbl" layoutX="71.0" layoutY="16.0" text="00/00/00" textFill="#5e5b5b">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+         </children>
       </Pane>
    </children>
 </AnchorPane>
