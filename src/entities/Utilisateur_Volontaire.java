@@ -14,7 +14,7 @@ public class Utilisateur_Volontaire {
     private String nomVolontaire;
     private String prenomVolontaire;
     private String adresseVolontaire;
-        private int telephoneVolontaire;
+    private String telephoneVolontaire;
         private String mail;
            private String code;
         private String association;
@@ -26,8 +26,9 @@ public class Utilisateur_Volontaire {
 
    
     
-    public  Utilisateur_Volontaire (int id , String nomVolontaire , String prenomVolontaire ,String adresseVolontaire, int telephoneVolontaire,  String mail ,String code, String association)
-    {   this.id=id;
+    public  Utilisateur_Volontaire (String nomVolontaire , String prenomVolontaire ,String adresseVolontaire, String telephoneVolontaire,  String mail ,String code, String association)
+    {  
+        this.id=id;
         this.nomVolontaire=nomVolontaire;
         this.prenomVolontaire=prenomVolontaire;
         this.adresseVolontaire=adresseVolontaire;
@@ -36,6 +37,10 @@ public class Utilisateur_Volontaire {
         this.code=code;
         this.association=association;
      }
+
+    public Utilisateur_Volontaire(String string, String string0, String string1, String string2, String string3, String string4) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -69,11 +74,11 @@ public class Utilisateur_Volontaire {
         return adresseVolontaire;
     }
 
-    public void setTelephoneVolontaire(int telephoneVolontaire) {
+    public void setTelephoneVolontaire(String telephoneVolontaire) {
         this.telephoneVolontaire = telephoneVolontaire;
     }
 
-    public int getTelephoneVolontaire() {
+    public String getTelephoneVolontaire() {
         return telephoneVolontaire;
     }
 

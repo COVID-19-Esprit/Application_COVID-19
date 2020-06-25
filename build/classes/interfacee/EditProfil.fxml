@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditProfilController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="-8.0" prefHeight="564.0" prefWidth="1101.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-3.0" layoutY="-2.0" prefHeight="736.0" prefWidth="1402.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
+               <children>
+                  <AnchorPane layoutX="401.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="860.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label layoutX="-62.0" layoutY="-32.0" text="Welcome To Covid -19 Application" textFill="#b2b2b2">
+                           <font>
+                              <Font size="44.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="269.0" layoutY="400.0" />
+                        <AnchorPane layoutX="-230.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="1091.0" style="-fx-background-color: aeaeaeae;">
+                           <children>
+                              <Label fx:id="tfc1" layoutX="169.0" layoutY="42.0" style="-fx-text-fill: transparent;" text="Label" />
+                              <Label fx:id="e1" layoutX="300.0" layoutY="76.0" textFill="#bb0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="e2" layoutX="302.0" layoutY="141.0" textFill="#bb0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="-79.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="314.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="USER" layoutX="73.0" layoutY="139.0" size="150" text="" wrappingWidth="128.9999804496765" />
+                                    <Label layoutX="25.0" layoutY="222.0" text="First Name : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="23.0" layoutY="255.0" text="Last Name : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="24.0" layoutY="287.0" text="Age : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="24.0" layoutY="320.0" text="Adresse : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="23.0" layoutY="354.0" text="Contact : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="24.0" layoutY="389.0" text="Mail : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="22.0" layoutY="423.0" text="Password : ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbfirstname" layoutX="124.0" layoutY="226.0" />
+                                    <Label fx:id="lblastname" layoutX="124.0" layoutY="259.0" />
+                                    <Label fx:id="lbage" layoutX="124.0" layoutY="291.0" />
+                                    <Label fx:id="lbadresse" layoutX="124.0" layoutY="324.0" />
+                                    <Label fx:id="lbcontact" layoutX="124.0" layoutY="358.0" />
+                                    <Label fx:id="lbmail" layoutX="124.0" layoutY="393.0" />
+                                    <Label fx:id="lbpassword" layoutX="124.0" layoutY="427.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="259.0" layoutY="103.0" text="First Name : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="259.0" layoutY="152.0" text="Last Name : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="305.0" layoutY="200.0" text="Age : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="277.0" layoutY="253.0" text="Adresse : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="277.0" layoutY="301.0" text="Contact : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="302.0" layoutY="353.0" text="Email : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tffirst" layoutX="406.0" layoutY="103.0" promptText="New First Name" />
+                              <TextField fx:id="tflastname" layoutX="406.0" layoutY="154.0" promptText="New Last Name" />
+                              <TextField fx:id="tfage" layoutX="406.0" layoutY="201.0" promptText="Old" />
+                              <TextField fx:id="tfadresse" layoutX="406.0" layoutY="252.0" promptText="Adresse" />
+                              <TextField fx:id="tfmobile" layoutX="406.0" layoutY="302.0" promptText="Mobile" />
+                              <TextField fx:id="tfmail" layoutX="406.0" layoutY="353.0" promptText="Email" />
+                              <TextField fx:id="tfpassword2" layoutX="827.0" layoutY="205.0" promptText="Confirm Password" />
+                              <TextField fx:id="tfpassword1" layoutX="827.0" layoutY="156.0" promptText="New Password" />
+                              <Button layoutX="898.0" layoutY="438.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Update">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow radius="50.03" spread="0.37" width="181.12" />
+                                 </effect>
+                              </Button>
+                              <Button layoutX="278.0" layoutY="438.0" mnemonicParsing="false" onAction="#retour" prefHeight="35.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow radius="50.03" spread="0.37" width="181.12" />
+                                 </effect>
+                              </Button>
+                              <Label layoutX="700.0" layoutY="156.0" text="New Password : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="674.0" layoutY="205.0" text="Confirm Password : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfpassword11" layoutX="827.0" layoutY="103.0" promptText="Ancien  Password" />
+                              <Label layoutX="682.0" layoutY="103.0" text="Ancien Password : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="744.0" layoutY="24.0" text="Change Password" textFill="#030000">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="317.0" layoutY="24.0" text="Account Information" textFill="#030000">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <effect>
+                        <DropShadow height="255.0" radius="127.0" spread="0.44" width="255.0" />
+                     </effect>
+                  </AnchorPane>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="41.0" layoutY="60.0" opacity="0.72" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../93634.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

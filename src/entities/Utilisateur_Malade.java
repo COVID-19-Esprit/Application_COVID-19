@@ -16,15 +16,15 @@ public class Utilisateur_Malade {
     private int id;
     private String nomMalade;
     private String prenomMalade;
-     private Date ageMalade;
+     private String ageMalade;
     private String adresseMalade;
-    private int telephoneMalade;
+    private String telephoneMalade;
     private String mailMalade;
         private String code;
 
     
     public Utilisateur_Malade(){};
-    public Utilisateur_Malade(int id ,String nomMalade , String prenomMalade , Date ageMalade , String adresseMalade , int telephoneMalade , String mailMalade , String code )
+    public Utilisateur_Malade(String nomMalade , String prenomMalade , String ageMalade , String adresseMalade , String telephoneMalade , String mailMalade , String code )
     {   this.id=id;
         this.nomMalade=nomMalade;
         this.prenomMalade=prenomMalade;
@@ -59,11 +59,11 @@ public class Utilisateur_Malade {
         return prenomMalade;
     }
 
-    public void setAgeMalade(Date ageMalade) {
+    public void setAgeMalade(String ageMalade) {
         this.ageMalade = ageMalade;
     }
 
-    public Date getAgeMalade() {
+    public String getAgeMalade() {
         return ageMalade;
     }
 
@@ -75,11 +75,11 @@ public class Utilisateur_Malade {
         return adresseMalade;
     }
 
-    public void setTelephoneMalade(int telephoneMalade) {
+    public void setTelephoneMalade(String telephoneMalade) {
         this.telephoneMalade = telephoneMalade;
     }
 
-    public int getTelephoneMalade() {
+    public String getTelephoneMalade() {
         return telephoneMalade;
     }
 

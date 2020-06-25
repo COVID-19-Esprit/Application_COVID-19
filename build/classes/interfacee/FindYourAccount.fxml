@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FindYourAccountController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="4.0" prefHeight="564.0" prefWidth="1101.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-10.0" layoutY="-4.0" prefHeight="736.0" prefWidth="1420.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
+               <children>
+                  <AnchorPane layoutX="526.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="231.0" prefWidth="660.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="26.0" text="Find Your Account">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="73.0" text="Please enter your email address or phone number to find your account.">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutY="231.0" prefHeight="57.0" prefWidth="660.0" style="-fx-background-color: #939090;" />
+                        <Button fx:id="r" layoutX="14.0" layoutY="245.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow radius="53.735" spread="0.37" width="195.94" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="search" layoutX="505.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Search">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow radius="53.735" spread="0.37" width="195.94" />
+                           </effect>
+                        </Button>
+                        <Separator layoutX="21.0" layoutY="64.0" prefHeight="3.0" prefWidth="593.0" />
+                        <Label fx:id="mail" layoutX="248.0" layoutY="117.0" prefHeight="17.0" prefWidth="1.0" underline="true" />
+                        <TextField fx:id="tfcode" layoutX="112.0" layoutY="128.0" prefHeight="25.0" prefWidth="432.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="279.0" style="-fx-background-color: #939090;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#bf2222" height="147.02" radius="65.9675" spread="0.76" width="118.85" />
+         </effect>
+         <children>
+            <Label layoutX="88.0" layoutY="131.0" text="COVID 19">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Label layoutX="63.0" layoutY="157.0" text=" APPLICATION">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Button layoutX="43.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="What is Covid-19 ?" />
+            <Button layoutX="45.0" layoutY="273.0" mnemonicParsing="false" text="Protect yourself from Covid-19 ?" />
+            <Button layoutX="43.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Quiz test Covid-19" />
+            <Button fx:id="lastnew" layoutX="43.0" layoutY="360.0" mnemonicParsing="false" onAction="#lastnew" prefHeight="25.0" prefWidth="188.0" text="Last New" />
+            <Button fx:id="order" layoutX="43.0" layoutY="403.0" mnemonicParsing="false" onAction="#order" prefHeight="25.0" prefWidth="188.0" text="Order" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

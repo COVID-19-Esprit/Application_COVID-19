@@ -26,5 +26,7 @@ public class myconnection {
            return null;
         }
     }
-    //make sure you add the lib
+    
+    public Connection getCnx()
+    {return conn ;}
 }

@@ -22,17 +22,17 @@ public class Inscription_Volontaire {
       public void ajouteruv (Utilisateur_Volontaire v)
     {
         try {
-                   String req2="INSERT INTO volentaire(id,nomVolontaire,prenomVolontaire,adresseVolontaire,telephoneVolontaire,mail,code,association) VALUES (?,?,?,?,?,?,?,?)";
+                String req2="INSERT INTO volentaire(nomVolontaire,prenomVolontaire,adresseVolontaire,telephoneVolontaire,mail,code,association) VALUES (?,?,?,?,?,?,?)";
 
             PreparedStatement pst = con.prepareStatement(req2);
-           pst.setInt(1,v.getId());
-            pst.setString(2, v.getNomVolontaire());
-           pst.setString(3, v.getPrenomVolontaire());
-              pst.setString(4, v.getAdresseVolontaire());
-            pst.setInt(5, v.getTelephoneVolontaire());
-            pst.setString(6, v.getMail());
-             pst.setString(7, v.getCode());
-            pst.setString(8, v.getAssociation());
+         //  pst.setInt(1,v.getId());
+            pst.setString(1, v.getNomVolontaire());
+           pst.setString(2, v.getPrenomVolontaire());
+              pst.setString(3, v.getAdresseVolontaire());
+            pst.setString(4, v.getTelephoneVolontaire());
+            pst.setString(5, v.getMail());
+             pst.setString(6, v.getCode());
+            pst.setString(7, v.getAssociation());
 
             pst.executeUpdate();
             System.out.println("Association Ajouter ! ");

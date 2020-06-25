@@ -5,6 +5,7 @@
  */
 package tests;
 
+import controllers.Reset_passwordController;
 import services.JavaMailUtil;
 
 /**
@@ -18,7 +19,12 @@ public class JavaMail {
      */
     public static void main(String[] args) throws Exception
     {
-        JavaMailUtil.main("achref.hammami@esprit.tn");
-    }
+        //JavaMailUtil.main("achref.hammami@esprit.tn");
+       JavaMailUtil.main("hammamiachref654@gmail.com");
+
+
+
+
+    } 
     
 }

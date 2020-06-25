@@ -25,17 +25,17 @@ public class Inscription_Malade {
      public void ajouterMalade(Utilisateur_Malade m)
     {
         try {
-                   String req2="INSERT INTO malade(id,nomMalade,prenomMalade,ageMalade,adresseMalade,telephoneMalade,mailMalade,code) VALUES (?,?,?,?,?,?,?,?)";
+                   String req2="INSERT INTO malade(nomMalade,prenomMalade,ageMalade,adresseMalade,telephoneMalade,mailMalade,code) VALUES (?,?,?,?,?,?,?)";
 
             PreparedStatement pst = con.prepareStatement(req2);
-            pst.setInt(1,m.getId());
-           pst.setString(2,m.getNomMalade());
-            pst.setString(3,m.getPrenomMalade());
-           pst.setDate(4,m.getAgeMalade());
-              pst.setString(5,m.getAdresseMalade());
-             pst.setInt(6, m.getTelephoneMalade());
-              pst.setString(7,m.getMailMalade());
-                           pst.setString(8,m.getCode());
+           // pst.setInt(1,m.getId());
+           pst.setString(1,m.getNomMalade());
+            pst.setString(2,m.getPrenomMalade());
+           pst.setString(3,m.getAgeMalade());
+              pst.setString(4,m.getAdresseMalade());
+             pst.setString(5, m.getTelephoneMalade());
+              pst.setString(6,m.getMailMalade());
+              pst.setString(7,m.getCode());
 
             pst.executeUpdate();
             System.out.println("Malade Ajouter ! ");

@@ -1,63 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXDatePicker?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Interface_inscription_volontaireController">
+<AnchorPane id="AnchorPane" prefHeight="726.0" prefWidth="1339.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Interface_inscription_volontaireController">
    <children>
-      <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="150.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
+      <AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="1357.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css">
          <children>
-            <AnchorPane layoutX="703.0" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="389.0" style="-fx-background-color: #820404;">
+            <AnchorPane layoutX="468.0" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="739.0" style="-fx-background-color: #490303;">
                <effect>
                   <DropShadow height="231.48" radius="115.19" spread="0.61" width="231.28" />
                </effect>
                <children>
-                  <TextField fx:id="tfidd" layoutX="109.0" layoutY="34.0" prefHeight="25.0" prefWidth="210.0" promptText="Id" style="-fx-background-color: ffffff;" />
-                  <TextField fx:id="tfnomm" layoutX="109.0" layoutY="77.0" prefHeight="25.0" prefWidth="210.0" promptText="Last Name" style="-fx-background-color: ffffff;" />
-                  <TextField fx:id="tfprenomm" layoutX="109.0" layoutY="124.0" prefHeight="25.0" prefWidth="210.0" promptText="First Name" style="-fx-background-color: ffffff;" />
-                  <Label layoutX="84.0" layoutY="38.0" text="Id :" textFill="WHITE" />
-                  <Label layoutX="41.0" layoutY="81.0" text="Last Name :" textFill="WHITE" />
-                  <Label layoutX="39.0" layoutY="128.0" text="First Name :" textFill="WHITE" />
-                  <Label layoutX="23.0" layoutY="172.0" text="Date of Birth :" textFill="WHITE" />
-                  <Label layoutX="55.0" layoutY="217.0" text="Adresse : " textFill="WHITE" />
-                  <Label layoutX="57.0" layoutY="261.0" text="Contact :" textFill="WHITE" />
-                  <Label layoutX="63.0" layoutY="302.0" text="Email :" textFill="WHITE" />
-                  <Label layoutX="48.0" layoutY="342.0" text="Password :" textFill="WHITE" />
-                  <TextField fx:id="tfadresse" layoutX="109.0" layoutY="213.0" prefHeight="25.0" prefWidth="210.0" />
-                  <TextField fx:id="tftelephonee" layoutX="111.0" layoutY="257.0" prefHeight="25.0" prefWidth="210.0" />
-                  <TextField fx:id="tfmaill" layoutX="111.0" layoutY="298.0" prefHeight="25.0" prefWidth="210.0" />
-                  <TextField fx:id="tfmp" layoutX="111.0" layoutY="338.0" prefHeight="25.0" prefWidth="210.0" />
-                  <Button layoutX="219.0" layoutY="473.0" mnemonicParsing="false" onAction="#ajoutervolontaire" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Submet">
+                  <TextField fx:id="tfnomm" layoutX="266.0" layoutY="81.0" prefHeight="25.0" prefWidth="210.0" promptText="Last Name" style="-fx-background-color: ffffff;" />
+                  <TextField fx:id="tfprenomm" layoutX="266.0" layoutY="128.0" prefHeight="25.0" prefWidth="210.0" promptText="First Name" style="-fx-background-color: ffffff;" />
+                  <TextField fx:id="tfadd" layoutX="266.0" layoutY="176.0" prefHeight="25.0" prefWidth="210.0" />
+                  <TextField fx:id="tftelephonee" layoutX="268.0" layoutY="220.0" prefHeight="25.0" prefWidth="210.0" />
+                  <TextField fx:id="tfmaill" layoutX="268.0" layoutY="263.0" prefHeight="25.0" prefWidth="210.0" />
+                  <PasswordField fx:id="tfmp" layoutX="268.0" layoutY="306.0" prefHeight="25.0" prefWidth="210.0" />
+                  <TextField fx:id="tfasso" layoutX="268.0" layoutY="349.0" prefHeight="25.0" prefWidth="210.0" />
+                  <Label layoutX="198.0" layoutY="85.0" text="Last Name :" textFill="WHITE" />
+                  <Label layoutX="196.0" layoutY="132.0" text="First Name :" textFill="WHITE" />
+                  <Label layoutX="212.0" layoutY="180.0" text="Adresse : " textFill="WHITE" />
+                  <Label layoutX="214.0" layoutY="224.0" text="Contact :" textFill="WHITE" />
+                  <Label layoutX="220.0" layoutY="267.0" text="Email :" textFill="WHITE" />
+                  <Label layoutX="205.0" layoutY="310.0" text="Password :" textFill="WHITE" />
+                  <Button layoutX="560.0" layoutY="439.0" mnemonicParsing="false" onAction="#ajoutervolontaire" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Save">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="43.0" layoutY="473.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
+                  <Button layoutX="45.0" layoutY="439.0" mnemonicParsing="false" onAction="#retour" prefHeight="34.0" prefWidth="137.0" style="-fx-background-radius: 100PX; -fx-border-radius: 100PX;" stylesheets="@../styling/fullpackstyling.css" text="Back">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <TextField layoutX="111.0" layoutY="382.0" prefHeight="25.0" prefWidth="210.0" />
-                  <Label layoutX="37.0" layoutY="386.0" text="Association :" textFill="WHITE" />
-                  <JFXDatePicker layoutX="109.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" />
+                  <Label layoutX="194.0" layoutY="353.0" text="Association :" textFill="WHITE" />
+                  <Label fx:id="errnom" layoutX="478.0" layoutY="85.0" textFill="RED" />
+                  <Label fx:id="errnom1" layoutX="478.0" layoutY="132.0" textFill="RED" />
+                  <Label fx:id="erradresse" layoutX="478.0" layoutY="182.0" textFill="RED" />
+                  <Label fx:id="errcontact" layoutX="478.0" layoutY="226.0" textFill="RED" />
+                  <Label fx:id="errnail" layoutX="478.0" layoutY="267.0" textFill="RED" />
+                  <Label fx:id="errmdp" layoutX="478.0" layoutY="307.0" textFill="RED" />
+                  <Label fx:id="errassocia" layoutX="478.0" layoutY="351.0" textFill="RED" />
                </children>
             </AnchorPane>
-            <Label layoutX="727.0" layoutY="14.0" text="COVID-19 APPLICATION" textFill="WHITE">
+            <Label layoutX="647.0" layoutY="14.0" text="COVID-19 APPLICATION" textFill="WHITE">
                <font>
                   <Font size="35.0" />
                </font>
             </Label>
-            <Label layoutX="648.0" layoutY="65.0" prefHeight="34.0" prefWidth="709.0" text="If you create an account in your application you will receive all  news" textFill="WHITE">
+            <Label layoutX="568.0" layoutY="65.0" prefHeight="34.0" prefWidth="709.0" text="If you create an account in your application you will receive all  news" textFill="WHITE">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="691.0" layoutY="99.0" text=" about the pandemic covid-19 in tunisia  and all the world ." textFill="WHITE">
+            <Label layoutX="611.0" layoutY="99.0" text=" about the pandemic covid-19 in tunisia  and all the world ." textFill="WHITE">
                <font>
                   <Font size="19.0" />
                </font>
@@ -88,7 +91,7 @@
             <Button layoutX="43.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="What is Covid-19 ?" />
             <Button layoutX="45.0" layoutY="273.0" mnemonicParsing="false" text="Protect yourself from Covid-19 ?" />
             <Button layoutX="43.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Quiz test Covid-19" />
-            <Button fx:id="lastnew" layoutX="43.0" layoutY="360.0" mnemonicParsing="false" onAction="#lastnew" prefHeight="25.0" prefWidth="188.0" text="Last New" />
+            <Button fx:id="lastnew" layoutX="43.0" layoutY="360.0" mnemonicParsing="false" onAction="#lastnew" prefHeight="25.0" prefWidth="188.0" text="latest news" />
             <Button fx:id="order" layoutX="43.0" layoutY="403.0" mnemonicParsing="false" onAction="#order" prefHeight="25.0" prefWidth="188.0" text="Order" />
             <Label layoutX="28.0" layoutY="145.0" text="Create a New Account">
                <font>

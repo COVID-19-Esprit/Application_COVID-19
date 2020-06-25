@@ -1,3 +1,29 @@
+.imageadmin{
+    
+    -fx-background-image:url('imageAdmin.jpg');
+    -fx-background-size:contain;
+}
+.i{
+    
+    -fx-background-image:url('Basket-131983734476556512.png');
+    -fx-background-size:contain;
+}
+.imageMalade{
+    
+    -fx-background-image:url('imageMalade.jpg');
+    -fx-background-size:contain;
+}
+
+.imageVolontaire{
+    
+    -fx-background-image:url('imageVolontaire.png');
+    -fx-background-size:contain;
+}
+
+
+
+
+
 
 .bodybg{
     

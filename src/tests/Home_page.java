@@ -32,7 +32,7 @@ public class Home_page extends Application {
                     .getResource("/interfacee/Home_page.fxml"));
             Scene scene = new Scene(root);
             
-            primaryStage.setTitle("Home");
+            primaryStage.setTitle("COVID 19 APPLICATION");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {

@@ -5,6 +5,7 @@
  */
 package tests;
 
+import entities.Commandes;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -15,6 +16,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import services.Ajouter_commande;
+import utils.myconnection;
 
 /**
  *
@@ -25,13 +28,13 @@ public class Commande extends Application {
     @Override
     public void start(Stage primaryStage) {
         
-        
+      
         try {
             Parent root = FXMLLoader.load(getClass()
                     .getResource("/interfacee/Commande.fxml"));
             Scene scene = new Scene(root);
             
-            primaryStage.setTitle("Ommande");
+            primaryStage.setTitle("Commande");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {
@@ -45,6 +48,14 @@ public class Commande extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        
+             myconnection mc = new myconnection();
+        Ajouter_commande iv =new Ajouter_commande();
+              
+
+          //  Commandes u = new Commandes(1,"pome","1","admin","");
+         //   iv.ajoutercommande(u);
+       
     }
     
 }

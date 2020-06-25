@@ -5,6 +5,7 @@
  */
 package controllers;
 
+import static controllers.Interface_inscription_maladeController.isTextFieldNotEmpty;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,6 +17,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -30,6 +33,8 @@ public class Choix_utilisateurController implements Initializable {
     private Button tfvolo;
     @FXML
     private Button lastnew;
+    @FXML
+    private Label test;
 
     /**
      * Initializes the controller class.
@@ -39,16 +44,19 @@ public class Choix_utilisateurController implements Initializable {
         // TODO
     }    
 
+   
+      
+      
     @FXML
     private void tfmalade(ActionEvent event) {
         try {
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("/interfacee/Interface_Inscription_malade.fxml")
+                            getClass().getResource("/interfacee/login.fxml")
                     );
             
             Parent root2 = loader.load();
-           controllers.Interface_inscription_maladeController dpc = loader.getController();
+           controllers.LoginController dpc = loader.getController();
            
             tfmala.getScene().setRoot(root2);
         } catch (IOException ex) {
@@ -60,11 +68,11 @@ public class Choix_utilisateurController implements Initializable {
         try {
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("/interfacee/Interface_inscription_volontaire.fxml")
+                            getClass().getResource("/interfacee/LoginVolontaire.fxml")
                     );
             
             Parent root2 = loader.load();
-            controllers.Interface_inscription_volontaireController dpc = loader.getController();
+            controllers.LoginVolontaireController dpc = loader.getController();
            
             tfvolo.getScene().setRoot(root2);
         } catch (IOException ex) {
@@ -77,11 +85,11 @@ public class Choix_utilisateurController implements Initializable {
           try {
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("/interfacee/Login.fxml")
+                            getClass().getResource("/interfacee/LoginMalade.fxml")
                     );
             
             Parent root2 = loader.load();
-            controllers.LoginController dpc = loader.getController();
+            controllers.LoginMaladeController dpc = loader.getController();
            
             tfmala.getScene().setRoot(root2);
         } catch (IOException ex) {
@@ -90,6 +98,23 @@ public class Choix_utilisateurController implements Initializable {
 
     @FXML
     private void lastnew(ActionEvent event) {
+    }
+
+    @FXML
+    private void home(ActionEvent event) {
+        
+          try {
+            FXMLLoader loader =
+                    new FXMLLoader(
+                            getClass().getResource("/interfacee/Home_page.fxml")
+                    );
+            
+            Parent root2 = loader.load();
+            controllers.Home_pageController dpc = loader.getController();
+           
+            tfmala.getScene().setRoot(root2);
+        } catch (IOException ex) {
+            System.err.println(ex.getMessage());        }
     }
 
 

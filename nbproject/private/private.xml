@@ -3,30 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/services/Inscription_Volontaire.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/controllers/Liste_des_commandesController.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/entities/Utilisateur_Malade.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/interfacee/OnBoard.fxml</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/interfacee/Liste_des_commandes.fxml</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/controllers/HomeController.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/interfacee/Interface_inscription_volontaire.fxml</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/styling/arriere_plan.css</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/interfacee/Choix_utilisateur.fxml</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/interfacee/Interface_Inscription_malade.fxml</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/controllers/Interface_inscription_maladeController.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/controllers/Choix_utilisateurController.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/tests/Choix_utilisateur.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/utils/myconnection.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/tests/Liste_des_commandes.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/entities/Utilisateur_Volontaire.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/interfacee/Login.fxml</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/controllers/Interface_inscription_volontaireController.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/services/Inscription_Malade.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/tests/Interface_inscription_volontaire.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/styling/fullpackstyling.css</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/tests/Main.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/controllers/LoginController.java</file>
-            <file>file:/C:/Users/Achref/Desktop/javaFX-MySQL-Login/src/tests/Interface_inscription_malade.java</file>
+            <file>file:/C:/Users/Achref/Desktop/Application_COVID-19/src/controllers/CommandeController.java</file>
         </group>
     </open-files>
 </project-private>
