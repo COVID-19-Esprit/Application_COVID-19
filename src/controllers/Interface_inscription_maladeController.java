@@ -254,11 +254,11 @@ if (nomempty && prenomempty && adresseempty  && teleempty &&mailempty && mdpempt
          try {
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("/interfacee/LoginMalade.fxml")
+                            getClass().getResource("/interfacee/Login.fxml")
                     );
             
             Parent root2 = loader.load();
-           LoginMaladeController dpc = loader.getController();
+           LoginController dpc = loader.getController();
            
             tfnom.getScene().setRoot(root2);
         } catch (IOException ex) {

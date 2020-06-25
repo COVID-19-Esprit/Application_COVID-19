@@ -164,8 +164,7 @@ public class PassCommandeController implements Initializable {
             prod.setCellValueFactory(new PropertyValueFactory<>("commande"));
             quantitprod.setCellValueFactory(new PropertyValueFactory<>("quantité"));
             descrproduit.setCellValueFactory(new PropertyValueFactory<>("description"));
-           
-               table.setItems(oblist);}
+            table.setItems(oblist);}
     
     
     

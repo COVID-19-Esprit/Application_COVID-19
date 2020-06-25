@@ -192,7 +192,7 @@ Notifications notif = Notifications.create().title("Error").text("Insertion erro
                     );
             
             Parent root2 = loader.load();
-            LoginVolontaireController dpc = loader.getController();
+            LoginController dpc = loader.getController();
            
             tfnomm.getScene().setRoot(root2);
         } catch (IOException ex) {

@@ -68,11 +68,11 @@ public class Choix_utilisateurController implements Initializable {
         try {
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("/interfacee/LoginVolontaire.fxml")
+                            getClass().getResource("/interfacee/Login.fxml")
                     );
             
             Parent root2 = loader.load();
-            controllers.LoginVolontaireController dpc = loader.getController();
+            controllers.LoginController dpc = loader.getController();
            
             tfvolo.getScene().setRoot(root2);
         } catch (IOException ex) {
@@ -85,11 +85,11 @@ public class Choix_utilisateurController implements Initializable {
           try {
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("/interfacee/LoginMalade.fxml")
+                            getClass().getResource("/interfacee/Login.fxml")
                     );
             
             Parent root2 = loader.load();
-            controllers.LoginMaladeController dpc = loader.getController();
+            controllers.LoginController dpc = loader.getController();
            
             tfmala.getScene().setRoot(root2);
         } catch (IOException ex) {
