@@ -12,10 +12,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -37,7 +40,16 @@ public class SuivimController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    } 
+    public void ChangeScreenStatistic(ActionEvent event) throws IOException {
+    Parent StaticParent = FXMLLoader.load(getClass().getResource("Statistics.fxml"));
+    Scene StaticScene = new Scene(StaticParent);
+    
+    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+    window.setScene(StaticScene);
+    window.show();
+
+   }
 
     @FXML
     private void next (ActionEvent event) {

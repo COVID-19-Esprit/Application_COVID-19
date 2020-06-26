@@ -6,46 +6,47 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="786.0" styleClass="bodyyy" stylesheets="@arriere_plan.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.Suivimp3Controller">
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="1052.0" styleClass="bodyyy" stylesheets="@arriere_plan.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.Suivimp3Controller">
    <children>
-      <Button fx:id="logout" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="71.0" text="Logout" />
-      <Button fx:id="Submit" layoutX="706.0" layoutY="361.0" mnemonicParsing="false" onAction="#Submit" prefHeight="25.0" prefWidth="71.0" text="Submit" />
-      <AnchorPane prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #BEBEBE;">
+      <Button fx:id="logout" layoutX="893.0" layoutY="28.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ea1212;" text="Logout" textFill="WHITE" />
+      <Button fx:id="Submit" layoutX="893.0" layoutY="454.0" mnemonicParsing="false" onAction="#Submit" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ea1212;" text="Send" textFill="#fcfcfc" />
+      <AnchorPane prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #01090f;">
          <children>
-            <Button layoutX="29.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="What is Covid-19 ?" />
-            <Button layoutX="29.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Protect yourself from Covid-19" />
-            <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Pass Covid-19 Quiz test" />
-            <Button layoutX="29.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Last news" />
+            <Button layoutX="29.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="What is Covid-19 ?" textFill="WHITE" />
+            <Button layoutX="29.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="Protect yourself from Covid-19" textFill="#f8f8f8" />
+            <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="Pass Covid-19 Quiz test" textFill="#f5f5f5" />
+            <Button layoutX="29.0" layoutY="239.0" mnemonicParsing="false" onAction="#ChangeScreenStatistic" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="COVID-19 statistics " textFill="WHITE" />
+            <Button layoutX="29.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="Last news" textFill="WHITE" />
          </children>
       </AnchorPane>
       <Text fill="WHITE" layoutX="246.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you noticed a sharp decrease in your taste or smell in recent days?">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
       <RadioButton layoutX="252.0" layoutY="67.0" mnemonicParsing="false" text="Yes, my taste and my sense of smell have greatly decreased in recent days" textFill="WHITE" />
       <RadioButton layoutX="252.0" layoutY="88.0" mnemonicParsing="false" text="No, my taste and smell have not diminished" textFill="WHITE" />
       <Text fill="WHITE" layoutX="246.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you been unable to eat or drink FOR 24 HOURS OR MORE?">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <RadioButton layoutX="252.0" layoutY="142.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
-      <RadioButton layoutX="252.0" layoutY="163.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <RadioButton layoutX="252.0" layoutY="153.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton layoutX="370.0" layoutY="153.0" mnemonicParsing="false" text="No" textFill="WHITE" />
       <Text fill="WHITE" layoutX="246.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you had diarrhea in the past 24 hours (at least 3 loose stools)?">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <RadioButton layoutX="252.0" layoutY="220.0" mnemonicParsing="false" text="Yes i have diarrhea" textFill="WHITE" />
-      <RadioButton layoutX="252.0" layoutY="241.0" mnemonicParsing="false" text="No, I don't have diarrhea" textFill="WHITE" />
-      <Text fill="WHITE" layoutX="246.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a headache ?">
+      <RadioButton layoutX="252.0" layoutY="243.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="172.0" text="Yes i have diarrhea" textFill="WHITE" />
+      <RadioButton layoutX="445.0" layoutY="243.0" mnemonicParsing="false" text="No, I don't have diarrhea" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="253.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a headache ?">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <RadioButton layoutX="252.0" layoutY="292.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
-      <RadioButton layoutX="252.0" layoutY="313.0" mnemonicParsing="false" text="No" textFill="WHITE" />
-      <Button fx:id="Previous" layoutX="255.0" layoutY="361.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="71.0" text="Previous" />
+      <RadioButton layoutX="252.0" layoutY="314.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton layoutX="253.0" layoutY="346.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <Button fx:id="Previous" layoutX="267.0" layoutY="454.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ea1212;" text="Previous" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -7,33 +7,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="786.0" styleClass="bodyyy" stylesheets="@arriere_plan.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.Suivimp2Controller">
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="1052.0" styleClass="bodyyy" stylesheets="@arriere_plan.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.Suivimp2Controller">
    <children>
-      <Button fx:id="logout" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="71.0" text="Logout" />
-      <Button fx:id="next" layoutX="706.0" layoutY="361.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="71.0" text="Next" />
-      <AnchorPane prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #BEBEBE;">
+      <Button fx:id="logout" layoutX="897.0" layoutY="32.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ea1212;" text="Logout" textFill="#f8f8f8" />
+      <Button fx:id="next" layoutX="905.0" layoutY="444.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ea1212;" text="Next" textFill="WHITE" />
+      <AnchorPane prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #01090f;">
          <children>
-            <Button layoutX="29.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="What is Covid-19 ?" />
-            <Button layoutX="29.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Protect yourself from Covid-19" />
-            <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Pass Covid-19 Quiz test" />
-            <Button layoutX="29.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Last news" />
+            <Button layoutX="29.0" layoutY="109.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="What is Covid-19 ?" textFill="#f5f5f5" />
+            <Button layoutX="29.0" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="Protect yourself from Covid-19" textFill="WHITE" />
+            <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="Pass Covid-19 Quiz test" textFill="WHITE" />
+            <Button layoutX="25.0" layoutY="245.0" mnemonicParsing="false" onAction="#ChangeScreenStatistic" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="COVID-19 statistics " textFill="#f8f8f8" />
+            <Button layoutX="25.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #ea1212;" text="Last news" textFill="#f8f8f8" />
          </children>
       </AnchorPane>
-      <Text fill="WHITE" layoutX="248.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the past 24 hours, have you noticed an UNUSUAL shortness of ">
+      <Text fill="WHITE" layoutX="276.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the past 24 hours, have you noticed an UNUSUAL shortness of ">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <Label layoutX="248.0" layoutY="71.0" text="breath when speaking or making a small effort?" textFill="WHITE">
+      <Label layoutX="276.0" layoutY="76.0" text="breath when speaking or making a small effort?" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <RadioButton layoutX="248.0" layoutY="91.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
-      <RadioButton layoutX="248.0" layoutY="112.0" mnemonicParsing="false" text="No" textFill="WHITE" />
-      <Text fill="WHITE" layoutX="248.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you had a sore throat or muscle pain or unusual muscle aches">
+      <RadioButton layoutX="276.0" layoutY="102.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton layoutX="371.0" layoutY="102.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="275.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you had a sore throat or muscle pain or unusual muscle aches">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="248.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0">
@@ -41,20 +42,20 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="248.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in the past few days?">
+      <Text fill="WHITE" layoutX="276.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in the past few days?">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <RadioButton layoutX="248.0" layoutY="181.0" mnemonicParsing="false" text="Yes, I have had a sore throat, muscle pain or aches for a few days" textFill="WHITE" />
-      <RadioButton layoutX="248.0" layoutY="202.0" mnemonicParsing="false" text="No, I have none of these symptoms" textFill="WHITE" />
-      <Text fill="WHITE" layoutX="248.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you been unusually tired these past few days?">
+      <RadioButton layoutX="272.0" layoutY="190.0" mnemonicParsing="false" text="Yes, I have had a sore throat, muscle pain or aches for a few days" textFill="WHITE" />
+      <RadioButton layoutX="275.0" layoutY="246.0" mnemonicParsing="false" text="No, I have none of these symptoms" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="273.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you been unusually tired these past few days?">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <RadioButton layoutX="248.0" layoutY="258.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
-      <RadioButton layoutX="248.0" layoutY="279.0" mnemonicParsing="false" text="No" textFill="WHITE" />
-      <Button fx:id="Previous" layoutX="252.0" layoutY="361.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="71.0" text="Previous" />
+      <RadioButton layoutX="334.0" layoutY="327.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton layoutX="430.0" layoutY="327.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <Button fx:id="Previous" layoutX="291.0" layoutY="437.0" mnemonicParsing="false" onAction="#Previous" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ea1212;" text="Previous" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -77,6 +77,7 @@ public class StatisticsController implements Initializable {
     window.show();
 
    }
+
     
     
     @Override
