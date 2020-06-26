@@ -91,7 +91,7 @@
             </Label>
          </children>
       </VBox>
-      <VBox layoutX="236.0" layoutY="422.0" prefHeight="156.0" prefWidth="182.0">
+      <VBox layoutX="233.0" layoutY="428.0" prefHeight="156.0" prefWidth="182.0">
          <children>
             <Label text="Today Deaths" textFill="#1b4a66">
                <font>
