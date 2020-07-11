@@ -14,7 +14,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import com.mysql.jdbc.Buffer;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader;
 import com.teknikindustries.yahooweather.WeatherDisplay;
 import com.teknikindustries.yahooweather.WeatherDoc;
 import java.io.BufferedInputStream;
@@ -63,6 +62,28 @@ public class WordStatisticsController implements Initializable {
     private Label colRec;
     @FXML
     private Label clocklbl;
+    
+    public void ChangeBack(ActionEvent event) throws IOException {
+    Parent WorldStaticParent = FXMLLoader.load(getClass().getResource("Statistics.fxml"));
+    Scene WorldStaticScene = new Scene(WorldStaticParent);
+    
+    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+    window.setScene(WorldStaticScene);
+    window.show();
+
+   }
+    
+    
+        public void ChangeBacktohome(ActionEvent event) throws IOException {
+    Parent StaticParent = FXMLLoader.load(getClass().getResource("Home_page.fxml"));
+    Scene StaticScene = new Scene(StaticParent);
+    
+    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+    window.setScene(StaticScene);
+    window.show();
+
+   }
+        
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1197.0" style="-fx-background-color: #010f1a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.ResultatQuiz2">
+    <children>
+        <Label layoutX="29.0" layoutY="45.0" prefHeight="88.0" prefWidth="654.0" text="Your state of health does not require any \n health intervention" textAlignment="CENTER" textFill="#f7f7f7">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="82.0" layoutY="145.0" prefHeight="33.0" prefWidth="467.0" text="- Your state of health does not require any health intervention" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="82.0" layoutY="195.0" prefHeight="33.0" prefWidth="467.0" text="- Restez chez vous et limitez vos contacts avec les autres" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="82.0" layoutY="245.0" prefHeight="33.0" prefWidth="467.0" text="- Respect the hygienic measures" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="82.0" layoutY="295.0" prefHeight="34.0" prefWidth="621.0" text="- For more information Call 80101919 or type * 2020 #" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+
+
+
+
+    </children>
+
+</AnchorPane>

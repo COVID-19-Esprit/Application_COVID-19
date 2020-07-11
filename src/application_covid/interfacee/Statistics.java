@@ -1,7 +1,6 @@
 package application_covid.interfacee;
 
 import com.mysql.jdbc.Buffer;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader;
 import com.teknikindustries.yahooweather.WeatherDisplay;
 import com.teknikindustries.yahooweather.WeatherDoc;
 import java.io.BufferedInputStream;

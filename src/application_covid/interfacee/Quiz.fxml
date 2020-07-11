@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1197.0" style="-fx-background-color: #010f1a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.QuizController">
+   <children>
+      <Pagination fx:id="pagination" layoutX="51.0" layoutY="26.0" prefHeight="643.0" prefWidth="984.0" style="-fx-background-color: #010f1a;" />
+      <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="999.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/2a245dedacc60a1187cc1413022d5695-covid-stop-sign-badge-by-vexels.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="222.0" fitWidth="235.0" layoutX="622.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/2a245dedacc60a1187cc1413022d5695-covid-stop-sign-badge-by-vexels.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

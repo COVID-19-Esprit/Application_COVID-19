@@ -26,7 +26,7 @@ public class SuiviMaladeCRUD {
             Connection cnx;
             
     public SuiviMaladeCRUD(){
-        cnx =  MyConnection.getInConnection().getCnx();
+        cnx =  MyConnection.getInstance().getCnx();
     
     }    
     
@@ -54,10 +54,10 @@ public class SuiviMaladeCRUD {
                     pst.setString(4, sma.getRespiration());
                     pst.setString(5, sma.getDouleur());
                     pst.setString(6, sma.getSymptomes());
-                    pst.setString(7, sma.getPerte_de_odorat());
-                    pst.setString(8, sma.getPerte_de_apetit());
+                    pst.setString(7, sma.getPerteOdorat());
+                    pst.setString(8, sma.getPerteApetit());
                     pst.setString(9, sma.getDiarrhee());
-                    pst.setString(10, sma.getMaux_de_tete());
+                    pst.setString(10, sma.getMauxTete());
                     pst.setString(11, sma.getCode());
                     pst.executeUpdate();
                     System.out.println("Informations saved!");

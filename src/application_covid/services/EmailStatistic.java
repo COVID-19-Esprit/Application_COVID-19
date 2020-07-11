@@ -5,8 +5,8 @@
  */
 package application_covid.services;
 
-import com.sun.xml.internal.org.jvnet.mimepull.MIMEMessage;
-import com.sun.xml.internal.ws.message.MimeAttachmentSet;
+
+
 import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;

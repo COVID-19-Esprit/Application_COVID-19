@@ -3,23 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/Suivimp1.fxml</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/services/SuiviMaladeCRUD.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/Suivimp2Controller.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/arriere_plan.css</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/utils/MyConnection.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/SuivimController.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/Statistics.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/services/Crypto.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/Admin/adminInterface.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/Suivimp3Controller.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/StatisticsController.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/services/Constants.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/utils/DBConnection.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/services/PDFGenerator.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/entities/SuiviMalade.java</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/Suivimp3.fxml</file>
-            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/SuiviMaladePage.java</file>
+            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/WhatIsCovid.java</file>
+            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/WhatIsCovid.fxml</file>
+            <file>file:/C:/Users/A/Desktop/Coronavirus/Application_COVID-19/src/application_covid/interfacee/WhatIsCovidController.java</file>
         </group>
     </open-files>
 </project-private>
