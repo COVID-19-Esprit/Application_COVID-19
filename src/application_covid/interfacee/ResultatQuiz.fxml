@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="863.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.ResultatQuiz">
+    <children>
+        <Label layoutX="176.0" layoutY="40.0" prefHeight="74.0" prefWidth="530.0" text="Your symptoms require prompt management" textAlignment="CENTER" textFill="#f7f7f7">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="82.0" layoutY="145.0" prefHeight="33.0" prefWidth="467.0" text="- Isolate yourself and wear a surgical mask" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="82.0" layoutY="195.0" prefHeight="33.0" prefWidth="467.0" text="- Do not travel to consult a private or public health facility" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="82.0" layoutY="245.0" prefHeight="33.0" prefWidth="467.0" text="- Call 190 immediately" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="82.0" layoutY="295.0" prefHeight="34.0" prefWidth="621.0" text="- To fight against your fever avoid taking Anti-inflammatories and take paracetamol" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

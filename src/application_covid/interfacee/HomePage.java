@@ -28,11 +28,11 @@ public class HomePage extends Application {
     public void start(Stage primaryStage) {
         try {
             Parent root = FXMLLoader.load(getClass()
-                    .getResource("Inscription.fxml"));
+                    .getResource("Quiz.fxml"));
             
             Scene scene = new Scene(root);
             
-            primaryStage.setTitle("Inscription");
+            primaryStage.setTitle("Quiz");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {

@@ -57,4 +57,15 @@ public class Quiz {
     public void setPoints(double points) {
         this.points = points;
     }
+
+    @Override
+    public String toString() {
+        return "Quiz{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", question='" + question + '\'' +
+                ", quizType=" + quizType +
+                ", points=" + points +
+                '}';
+    }
 }

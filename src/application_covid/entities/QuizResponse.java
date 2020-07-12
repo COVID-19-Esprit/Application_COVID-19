@@ -48,4 +48,12 @@ public class QuizResponse {
     public void setPoints(double points) {
         this.points = points;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            return ((QuizResponse) obj).id == this.id;
+        }
+        return false;
+    }
 }

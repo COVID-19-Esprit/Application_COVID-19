@@ -51,7 +51,7 @@ public class QuizCRUD {
         ResultSet resultSet = statement.executeQuery(request);
         while (resultSet.next()){
             Quiz quiz1;
-            if(resultSet.getString(4) == QuizType.MULTI_CHOICE.name()){
+            if(resultSet.getString(4).equals( QuizType.MULTI_CHOICE.name())){
                 quiz1 = new Quiz(
                         resultSet.getInt(1),
                         resultSet.getString(2),
@@ -68,6 +68,7 @@ public class QuizCRUD {
                         resultSet.getDouble(5)
                 );
             }
+            System.out.println(quiz1.toString());
             quizzes.add(quiz1);
 
         }
@@ -95,11 +96,12 @@ public class QuizCRUD {
         System.out.println("Quiz Response added successfully");
     }
 
-    public List<QuizResponse> getResponsesByQuiz(Quiz quiz) throws SQLException{
-        List<QuizResponse> quizResponses = new ArrayList<>();
-        String request = "SELECT * FROM quiz where quiz=?";
+    public ArrayList<QuizResponse> getResponsesByQuiz(Quiz quiz) throws SQLException{
+        ArrayList<QuizResponse> quizResponses = new ArrayList<>();
+        String request = "SELECT * FROM quizresponse where quiz="+quiz.getId();
         PreparedStatement statement = connection.prepareStatement(request);
-        statement.setInt(1,quiz.getId());
+        System.out.println("Quiz ID  :: " + quiz.getId());
+        // statement.setInt(1,quiz.getId());
         ResultSet resultSet = statement.executeQuery(request);
         while (resultSet.next()){
             QuizResponse quizResponse = new QuizResponse(
@@ -111,6 +113,15 @@ public class QuizCRUD {
             quizResponses.add(quizResponse);
         }
         return quizResponses;
+    }
+
+    public double getResponsePointsById(int id) throws SQLException{
+
+        String request = "SELECT points FROM quizresponse where id="+ id;
+        PreparedStatement statement = connection.prepareStatement(request);
+        ResultSet resultSet = statement.executeQuery(request);
+        resultSet.next();
+        return  resultSet.getDouble("points");
     }
 
     public void updateResponse(QuizResponse quizResponse,int id) throws Exception{

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="863.0" styleClass="bodyyy" stylesheets="@../styling/arriere_plan.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.QuizController">
+   <children>
+      <Pagination fx:id="pagination" layoutX="51.0" layoutY="26.0" prefHeight="512.0" prefWidth="756.0" stylesheets="@../styling/quiz.css" />
+   </children>
+</AnchorPane>

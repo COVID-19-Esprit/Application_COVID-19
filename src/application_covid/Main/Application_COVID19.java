@@ -5,10 +5,6 @@
  */
 package application_covid.Main;
 
-
-import java.sql.SQLException;
-import java.util.List;
-
 /**
  *
  * @author Achref
@@ -20,6 +16,8 @@ public class Application_COVID19 {
      */
     public static void main(String[] args)  {
         // TODO code application logic here
+
+
     }
     
 }
