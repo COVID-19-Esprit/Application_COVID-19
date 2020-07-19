@@ -2,7 +2,9 @@ package application_covid.interfacee;
 import application_covid.entities.Quiz;
 import application_covid.entities.QuizResponse;
 import application_covid.entities.QuizType;
+import application_covid.entities.SMSOAuthObject;
 import application_covid.services.QuizCRUD;
+import application_covid.services.SMSAPIService;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -227,29 +229,30 @@ public class QuizController implements Initializable {
 
         validateButton.setOnAction((actionEvent -> {
             /* */
-            if(resultSum() < 50) {
-                try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("ResultatQuiz2.fxml"));
-                    Parent root = loader.load();
-                    ResultatQuiz2 resulat = loader.getController();
-
-                    pagination.getScene().setRoot(root);
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }else {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("ResultatQuiz.fxml"));
                     Parent root = loader.load();
-                    ResultatQuiz resulat = loader.getController();
+                    ResultatQuiz resultatQuiz = loader.getController();
+
+                    if(resultSum() > 50) {
+                        resultatQuiz.initializeButtonClick("Your symptoms require prompt management" +
+                                "--Isolate yourself and wear a surgical mask--" +
+                                "--Do not travel to consult a private or public health facility--" +
+                                "--Call 190 immediately--" +
+                                "--To fight against your fever avoid taking Anti-inflammatories and take paracetamol--");
+                    }else {
+                        resultatQuiz.initializeButtonClick("--Your state of health does not require any health intervention--"+
+                                "--Restez chez vous et limitez vos contacts avec les autres--"+
+                                "--Respect the hygienic measures--");
+                    }
+
 
                     pagination.getScene().setRoot(root);
 
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
+
         }));
 
         hBox.setAlignment(Pos.BASELINE_RIGHT);
