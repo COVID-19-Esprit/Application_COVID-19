@@ -19,10 +19,9 @@ public class MainClass {
         MyConnection mc = MyConnection.getInstance();
         InformationCRUD ic = new InformationCRUD();
         Information i = new Information(5, "titre1", "bababaabb");
-        //ic.ajouterInformation(i);
+        ic.ajouterInformation(i);
         System.out.println(ic.displayAll());
-        Information i2 = new Information(8, "titre8", "bksddksidjib");
-        //ic.updateInformation(i2, 1);
-        ic.supprimerInformation(1);
+        //ic.updateInformation(i, 1);
+        //ic.supprimerInformation(1);
     }
 }

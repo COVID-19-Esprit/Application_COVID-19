@@ -6,6 +6,8 @@
 package application_covid.interfacee;
 
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -26,7 +28,7 @@ public class HomePage extends Application {
     public void start(Stage primaryStage) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
-            Scene scene = new Scene(root);
+            Scene scene = new Scene(root,1400,800);
             
             primaryStage.setTitle("HomePage");
             primaryStage.setScene(scene);

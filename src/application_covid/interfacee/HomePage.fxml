@@ -1,19 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="609.0" styleClass="bodybg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application_covid.interfacee.HomePageController">
-    <stylesheets>
-        <URL value="@homepage.css" />
-    </stylesheets>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="865.0" prefWidth="1439.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.HomePageController">
    <children>
-      <ImageView fitHeight="959.0" fitWidth="1300.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="950.0" fitWidth="1992.0" layoutX="-189.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/background.jpg" />
+            <Image url="@background.jpg" />
          </image>
       </ImageView>
+      <AnchorPane cache="true" layoutX="422.0" layoutY="74.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="653.0" prefWidth="595.0" style="-fx-background-color: #990000;">
+         <children>
+            <JFXButton fx:id="tf4" layoutX="93.0" layoutY="510.0" onAction="#btn5" prefHeight="104.0" prefWidth="411.0" style="-fx-background-color: #330000; -fx-background-radius: 45; -fx-background-size: 50;" text="Sign in">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="1.0" centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+            <JFXButton fx:id="tf3" layoutX="57.0" layoutY="416.0" onAction="#btn4" prefHeight="80.0" prefWidth="489.0" style="-fx-background-color: #330000; -fx-background-radius: 45; -fx-background-size: 50;" text="Last news">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="1.0" centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+            <JFXButton fx:id="tf2" layoutX="92.0" layoutY="303.0" onAction="#btn3" prefHeight="104.0" prefWidth="411.0" style="-fx-background-color: #330000; -fx-background-radius: 45; -fx-background-size: 50;" text=" Quiz testCovid-19">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="1.0" centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+            <JFXButton fx:id="tf1" layoutX="54.0" layoutY="206.0" onAction="#btn2" prefHeight="80.0" prefWidth="489.0" style="-fx-background-color: #330000; -fx-background-radius: 45; -fx-background-size: 50;" text="Protect yourself from Covid-19 ?">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow height="92.52" radius="55.09" spread="0.61" width="129.84" />
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="1.0" centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+            <JFXButton fx:id="tf" buttonType="RAISED" layoutX="91.0" layoutY="88.0" onAction="#btn1" prefHeight="104.0" prefWidth="411.0" style="-fx-background-color: #330000; -fx-background-radius: 45; -fx-background-size: 50;" text="What is Covid-19 ?">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE" height="204.48" radius="73.9425" spread="0.35" width="93.29">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </DropShadow>
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="1.0" centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="422.0" layoutY="14.0" prefHeight="70.0" prefWidth="595.0" text="COVID-19 APPLICATION ">
+         <font>
+            <Font name="Bodoni MT Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9660194174757282" endY="0.31553398058252424" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
    </children>
 </AnchorPane>

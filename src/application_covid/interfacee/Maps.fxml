@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.NewsController">
+   <children>
+      <ImageView fitHeight="976.0" fitWidth="2289.0" layoutX="-342.0" layoutY="-113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="326.0" layoutY="33.0" prefHeight="70.0" prefWidth="595.0" text="COVID-19 APPLICATION ">
+         <font>
+            <Font name="Bodoni MT Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9660194174757282" endY="0.31553398058252424" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <GoogleMapView fx:id="mapView" layoutX="99.0" layoutY="121.0" prefHeight="706.0" prefWidth="1282.0" />
+      <VBox prefHeight="863.0" prefWidth="1509.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />    
+   </children>
+</AnchorPane>

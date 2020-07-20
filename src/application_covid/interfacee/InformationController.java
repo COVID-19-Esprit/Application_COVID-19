@@ -23,16 +23,18 @@ import javafx.scene.control.TextField;
 /**
  * FXML Controller class
  *
- * @author House
+ * @author Rihab
  */
 public class InformationController implements Initializable {
+
+
 
     @FXML
     private TextField tfTitre;
     @FXML
     private TextField tfContent;
     @FXML
-    private Button btnValider;
+    private Button btnvalider;
 
     /**
      * Initializes the controller class.
@@ -43,33 +45,30 @@ public class InformationController implements Initializable {
     }    
 
     @FXML
-    private void validerInformation(ActionEvent event) {
+    private void validerPersonne(ActionEvent event) {
+        
         try {
-            //Sauvegarde de la personne dans la base
+            //Sauvgarde de la personne dans la base
+            
             Information i = new Information();
             i.setTitre(tfTitre.getText());
             i.setContent(tfContent.getText());
-            
             InformationCRUD icd = new InformationCRUD();
             icd.ajouterInformation(i);
+            System.err.println("*************");
             
-            //Redirection vers la page d'affichage
+            //Redirection vers la page d affichage
             
-            FXMLLoader loader =
-                    new FXMLLoader(
-                            getClass().getResource("DetailsInformation.fxml")
-                    );
-            
-            Parent root2 = loader.load();
-            DetailsInformationController dic = loader.getController();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("DetailsInformation.fxml"));
+            Parent root2= loader.load();
+            DetailsInformationController dic= loader.getController();
             dic.setResTitre(tfTitre.getText());
             dic.setResContent(tfContent.getText());
             tfContent.getScene().setRoot(root2);
-            
-            
         } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+            System.err.println(ex.getMessage());
         }
+        
     }
     
 }

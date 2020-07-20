@@ -14,9 +14,10 @@ import javafx.scene.control.TextField;
 /**
  * FXML Controller class
  *
- * @author House
+ * @author Rihab
  */
 public class DetailsInformationController implements Initializable {
+
 
     @FXML
     private TextField resTitre;
@@ -31,13 +32,14 @@ public class DetailsInformationController implements Initializable {
         // TODO
     }    
 
-    public void setResTitre(String valTitre) {
-        this.resTitre.setText(valTitre);
-    }
-    
 
-    public void setResContent(String valcontent) {
-       this.resContent.setText(valcontent);
+    public void setResTitre(String valTitre) {
+        this.resTitre.setText(valTitre); 
+    }
+
+
+    public void setResContent(String valContent) {
+        this.resContent.setText(valContent); 
     }
     
     

@@ -4,11 +4,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connectioncs.gui.DetailsPersonneController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_covid.interfacee.DetailsInformationController">
    <children>
-      <Label layoutX="114.0" layoutY="40.0" text="Titre saisie" />
-      <Label layoutX="105.0" layoutY="136.0" text="Content saisie" />
-      <TextField fx:id="resNom" editable="false" layoutX="272.0" layoutY="35.0" prefHeight="31.0" prefWidth="266.0" />
-      <TextField fx:id="resPrenom" editable="false" layoutX="272.0" layoutY="131.0" prefHeight="205.0" prefWidth="266.0" />
+      <Label layoutX="40.0" layoutY="135.0" prefHeight="21.0" prefWidth="86.0" text="Titre saisie" />
+      <Label layoutX="34.0" layoutY="224.0" prefHeight="21.0" prefWidth="98.0" text="Titre saisie" />
+      <TextField fx:id="resTitre" editable="false" layoutX="228.0" layoutY="130.0" />
+      <TextField fx:id="resContent" editable="false" layoutX="228.0" layoutY="219.0" />
    </children>
 </AnchorPane>
